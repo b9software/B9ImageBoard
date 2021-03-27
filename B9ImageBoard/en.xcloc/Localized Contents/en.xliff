@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="App/Scene/Base.lproj/Main.storyboard" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+    </header>
+    <body>
+      <trans-unit id="about-acknowledgements.title" xml:space="preserve">
+        <source>Acknowledgements</source>
+        <target>Acknowledgements</target>
+        <note>Class = "NSButtonCell"; title = "Acknowledgements"; ObjectID = "about-acknowledgements";</note>
+      </trans-unit>
+      <trans-unit id="about-appname.title" xml:space="preserve">
+        <source>B9ImageBoard</source>
+        <target>B9ImageBoard</target>
+        <note>Class = "NSTextFieldCell"; title = "B9ImageBoard"; ObjectID = "about-appname"; Note = "Programmatically set, no translation required";</note>
+      </trans-unit>
+      <trans-unit id="about-copyright.title" xml:space="preserve">
+        <source>Copyright © 2021 BB9z. All rights reserved.</source>
+        <target>Copyright © 2021 BB9z. All rights reserved.</target>
+        <note>Class = "NSTextFieldCell"; title = "Copyright © 2021 BB9z. All rights reserved."; ObjectID = "about-copyright"; Note = "Programmatically set, no translation required";</note>
+      </trans-unit>
+      <trans-unit id="about-version.title" xml:space="preserve">
+        <source>ver</source>
+        <target>ver</target>
+        <note>Class = "NSTextFieldCell"; title = "ver"; ObjectID = "about-version"; Note = "Programmatically set, no translation required";</note>
+      </trans-unit>
+      <trans-unit id="home-new-post-button.title" xml:space="preserve">
+        <source>New post notice</source>
+        <target>New post notice</target>
+        <note>Class = "NSButtonCell"; title = "New post notice"; ObjectID = "home-new-post-button"; Note = "Programmatically set, no translation required";</note>
+      </trans-unit>
+      <trans-unit id="menu-about.title" xml:space="preserve">
+        <source>About B9ImageBoard</source>
+        <target>About B9ImageBoard</target>
+        <note>Class = "NSMenuItem"; title = "About B9ImageBoard"; ObjectID = "menu-about";</note>
+      </trans-unit>
+      <trans-unit id="menu-app.title" xml:space="preserve">
+        <source>B9ImageBoard</source>
+        <target>B9ImageBoard</target>
+        <note>Class = "NSMenuItem"; title = "B9ImageBoard"; ObjectID = "menu-app";</note>
+      </trans-unit>
+      <trans-unit id="menu-appname.title" xml:space="preserve">
+        <source>B9ImageBoard</source>
+        <target>B9ImageBoard</target>
+        <note>Class = "NSMenu"; title = "B9ImageBoard"; ObjectID = "menu-appname";</note>
+      </trans-unit>
+      <trans-unit id="menu-bring-all-front.title" xml:space="preserve">
+        <source>Bring All to Front</source>
+        <target>Bring All to Front</target>
+        <note>Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "menu-bring-all-front";</note>
+      </trans-unit>
+      <trans-unit id="menu-capitalizeWord.title" xml:space="preserve">
+        <source>Capitalize</source>
+        <target>Capitalize</target>
+        <note>Class = "NSMenuItem"; title = "Capitalize"; ObjectID = "menu-capitalizeWord";</note>
+      </trans-unit>
+      <trans-unit id="menu-checkSpelling.title" xml:space="preserve">
+        <source>Check Document Now</source>
+        <target>Check Document Now</target>
+        <note>Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "menu-checkSpelling";</note>
+      </trans-unit>
+      <trans-unit id="menu-close.title" xml:space="preserve">
+        <source>Close</source>
+        <target>Close</target>
+        <note>Class = "NSMenuItem"; title = "Close"; ObjectID = "menu-close";</note>
+      </trans-unit>
+      <trans-unit id="menu-copy.title" xml:space="preserve">
+        <source>Copy</source>
+        <target>Copy</target>
+        <note>Class = "NSMenuItem"; title = "Copy"; ObjectID = "menu-copy";</note>
+      </trans-unit>
+      <trans-unit id="menu-cut.title" xml:space="preserve">
+        <source>Cut</source>
+        <target>Cut</target>
+        <note>Class = "NSMenuItem"; title = "Cut"; ObjectID = "menu-cut";</note>
+      </trans-unit>
+      <trans-unit id="menu-delete.title" xml:space="preserve">
+        <source>Delete</source>
+        <target>Delete</target>
+        <note>Class = "NSMenuItem"; title = "Delete"; ObjectID = "menu-delete";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-cache-directory.title" xml:space="preserve">
+        <source>View Cache Directory</source>
+        <target>View Cache Directory</target>
+        <note>Class = "NSMenuItem"; title = "View Cache Directory"; ObjectID = "menu-dev-cache-directory";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-clear-image-cache.title" xml:space="preserve">
+        <source>Clear Image Cache</source>
+        <target>Clear Image Cache</target>
+        <note>Class = "NSMenuItem"; title = "Clear Image Cache"; ObjectID = "menu-dev-clear-image-cache";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-context-top.title" xml:space="preserve">
+        <source>Context</source>
+        <target>Context</target>
+        <note>Class = "NSMenuItem"; title = "Context"; ObjectID = "menu-dev-context-top";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-context.title" xml:space="preserve">
+        <source>Context</source>
+        <target>Context</target>
+        <note>Class = "NSMenu"; title = "Context"; ObjectID = "menu-dev-context";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-database-trace.title" xml:space="preserve">
+        <source>Database Trace</source>
+        <target>Database Trace</target>
+        <note>Class = "NSMenuItem"; title = "Database Trace"; ObjectID = "menu-dev-database-trace";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-local-events-monitor.title" xml:space="preserve">
+        <source>Local Events Monitor</source>
+        <target>Local Events Monitor</target>
+        <note>Class = "NSMenuItem"; title = "Local Events Monitor"; ObjectID = "menu-dev-local-events-monitor";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-log-first-responder.title" xml:space="preserve">
+        <source>Log First Responder</source>
+        <target>Log First Responder</target>
+        <note>Class = "NSMenuItem"; title = "Log First Responder"; ObjectID = "menu-dev-log-first-responder";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-log-send-action.title" xml:space="preserve">
+        <source>Log Application Sent Action</source>
+        <target>Log Application Sent Action</target>
+        <note>Class = "NSMenuItem"; title = "Log Application Sent Action"; ObjectID = "menu-dev-log-send-action";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-logPreferences.title" xml:space="preserve">
+        <source>Log Preferences</source>
+        <target>Log Preferences</target>
+        <note>Class = "NSMenuItem"; title = "Log Preferences"; ObjectID = "menu-dev-logPreferences";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-no-image-load.title" xml:space="preserve">
+        <source>No Image Load</source>
+        <target>No Image Load</target>
+        <note>Class = "NSMenuItem"; title = "No Image Load"; ObjectID = "menu-dev-no-image-load";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-no-launch-sync.title" xml:space="preserve">
+        <source>No Launch Sync</source>
+        <target>No Launch Sync</target>
+        <note>Class = "NSMenuItem"; title = "No Launch Sync"; ObjectID = "menu-dev-no-launch-sync";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-open-database.title" xml:space="preserve">
+        <source>Open Database</source>
+        <target>Open Database</target>
+        <note>Class = "NSMenuItem"; title = "Open Database"; ObjectID = "menu-dev-open-database";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-support-directory.title" xml:space="preserve">
+        <source>View Support Directory</source>
+        <target>View Support Directory</target>
+        <note>Class = "NSMenuItem"; title = "View Support Directory"; ObjectID = "menu-dev-support-directory";</note>
+      </trans-unit>
+      <trans-unit id="menu-developer-top.title" xml:space="preserve">
+        <source>Developer</source>
+        <target>Developer</target>
+        <note>Class = "NSMenuItem"; title = "Developer"; ObjectID = "menu-developer-top";</note>
+      </trans-unit>
+      <trans-unit id="menu-developer.title" xml:space="preserve">
+        <source>Developer</source>
+        <target>Developer</target>
+        <note>Class = "NSMenu"; title = "Developer"; ObjectID = "menu-developer";</note>
+      </trans-unit>
+      <trans-unit id="menu-edit-menu.title" xml:space="preserve">
+        <source>Edit</source>
+        <target>Edit</target>
+        <note>Class = "NSMenu"; title = "Edit"; ObjectID = "menu-edit-menu";</note>
+      </trans-unit>
+      <trans-unit id="menu-edit-top.title" xml:space="preserve">
+        <source>Edit</source>
+        <target>Edit</target>
+        <note>Class = "NSMenuItem"; title = "Edit"; ObjectID = "menu-edit-top";</note>
+      </trans-unit>
+      <trans-unit id="menu-file-top.title" xml:space="preserve">
+        <source>File</source>
+        <target>File</target>
+        <note>Class = "NSMenuItem"; title = "File"; ObjectID = "menu-file-top";</note>
+      </trans-unit>
+      <trans-unit id="menu-file.title" xml:space="preserve">
+        <source>File</source>
+        <target>File</target>
+        <note>Class = "NSMenu"; title = "File"; ObjectID = "menu-file";</note>
+      </trans-unit>
+      <trans-unit id="menu-find-item.title" xml:space="preserve">
+        <source>Find</source>
+        <target>Find</target>
+        <note>Class = "NSMenuItem"; title = "Find"; ObjectID = "menu-find-item";</note>
+      </trans-unit>
+      <trans-unit id="menu-find-menu.title" xml:space="preserve">
+        <source>Find</source>
+        <target>Find</target>
+        <note>Class = "NSMenu"; title = "Find"; ObjectID = "menu-find-menu";</note>
+      </trans-unit>
+      <trans-unit id="menu-find-next.title" xml:space="preserve">
+        <source>Find Next</source>
+        <target>Find Next</target>
+        <note>Class = "NSMenuItem"; title = "Find Next"; ObjectID = "menu-find-next";</note>
+      </trans-unit>
+      <trans-unit id="menu-find-previous.title" xml:space="preserve">
+        <source>Find Previous</source>
+        <target>Find Previous</target>
+        <note>Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "menu-find-previous";</note>
+      </trans-unit>
+      <trans-unit id="menu-find-replace.title" xml:space="preserve">
+        <source>Find and Replace…</source>
+        <target>Find and Replace…</target>
+        <note>Class = "NSMenuItem"; title = "Find and Replace…"; ObjectID = "menu-find-replace";</note>
+      </trans-unit>
+      <trans-unit id="menu-find-selection.title" xml:space="preserve">
+        <source>Use Selection for Find</source>
+        <target>Use Selection for Find</target>
+        <note>Class = "NSMenuItem"; title = "Use Selection for Find"; ObjectID = "menu-find-selection";</note>
+      </trans-unit>
+      <trans-unit id="menu-find.title" xml:space="preserve">
+        <source>Find…</source>
+        <target>Find…</target>
+        <note>Class = "NSMenuItem"; title = "Find…"; ObjectID = "menu-find";</note>
+      </trans-unit>
+      <trans-unit id="menu-full-screen.title" xml:space="preserve">
+        <source>Enter Full Screen</source>
+        <target>Enter Full Screen</target>
+        <note>Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "menu-full-screen";</note>
+      </trans-unit>
+      <trans-unit id="menu-help-top.title" xml:space="preserve">
+        <source>Help</source>
+        <target>Help</target>
+        <note>Class = "NSMenuItem"; title = "Help"; ObjectID = "menu-help-top";</note>
+      </trans-unit>
+      <trans-unit id="menu-help.title" xml:space="preserve">
+        <source>Help</source>
+        <target>Help</target>
+        <note>Class = "NSMenu"; title = "Help"; ObjectID = "menu-help";</note>
+      </trans-unit>
+      <trans-unit id="menu-hide-others.title" xml:space="preserve">
+        <source>Hide Others</source>
+        <target>Hide Others</target>
+        <note>Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "menu-hide-others";</note>
+      </trans-unit>
+      <trans-unit id="menu-hide.title" xml:space="preserve">
+        <source>Hide B9ImageBoard</source>
+        <target>Hide B9ImageBoard</target>
+        <note>Class = "NSMenuItem"; title = "Hide B9ImageBoard"; ObjectID = "menu-hide";</note>
+      </trans-unit>
+      <trans-unit id="menu-jump-selection.title" xml:space="preserve">
+        <source>Jump to Selection</source>
+        <target>Jump to Selection</target>
+        <note>Class = "NSMenuItem"; title = "Jump to Selection"; ObjectID = "menu-jump-selection";</note>
+      </trans-unit>
+      <trans-unit id="menu-lowercaseWord.title" xml:space="preserve">
+        <source>Make Lower Case</source>
+        <target>Make Lower Case</target>
+        <note>Class = "NSMenuItem"; title = "Make Lower Case"; ObjectID = "menu-lowercaseWord";</note>
+      </trans-unit>
+      <trans-unit id="menu-main.title" xml:space="preserve">
+        <source>Main Menu</source>
+        <target>Main Menu</target>
+        <note>Class = "NSMenu"; title = "Main Menu"; ObjectID = "menu-main";</note>
+      </trans-unit>
+      <trans-unit id="menu-minimize.title" xml:space="preserve">
+        <source>Minimize</source>
+        <target>Minimize</target>
+        <note>Class = "NSMenuItem"; title = "Minimize"; ObjectID = "menu-minimize";</note>
+      </trans-unit>
+      <trans-unit id="menu-orderFrontSubstitutionsPanel.title" xml:space="preserve">
+        <source>Show Substitutions</source>
+        <target>Show Substitutions</target>
+        <note>Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "menu-orderFrontSubstitutionsPanel";</note>
+      </trans-unit>
+      <trans-unit id="menu-paste-match-style.title" xml:space="preserve">
+        <source>Paste and Match Style</source>
+        <target>Paste and Match Style</target>
+        <note>Class = "NSMenuItem"; title = "Paste and Match Style"; ObjectID = "menu-paste-match-style";</note>
+      </trans-unit>
+      <trans-unit id="menu-paste.title" xml:space="preserve">
+        <source>Paste</source>
+        <target>Paste</target>
+        <note>Class = "NSMenuItem"; title = "Paste"; ObjectID = "menu-paste";</note>
+      </trans-unit>
+      <trans-unit id="menu-preferences.title" xml:space="preserve">
+        <source>Preferences…</source>
+        <target>Preferences…</target>
+        <note>Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "menu-preferences";</note>
+      </trans-unit>
+      <trans-unit id="menu-quit.title" xml:space="preserve">
+        <source>Quit B9ImageBoard</source>
+        <target>Quit B9ImageBoard</target>
+        <note>Class = "NSMenuItem"; title = "Quit B9ImageBoard"; ObjectID = "menu-quit";</note>
+      </trans-unit>
+      <trans-unit id="menu-redo.title" xml:space="preserve">
+        <source>Redo</source>
+        <target>Redo</target>
+        <note>Class = "NSMenuItem"; title = "Redo"; ObjectID = "menu-redo";</note>
+      </trans-unit>
+      <trans-unit id="menu-save-as.title" xml:space="preserve">
+        <source>Save As…</source>
+        <target>Save As…</target>
+        <note>Class = "NSMenuItem"; title = "Save As…"; ObjectID = "menu-save-as";</note>
+      </trans-unit>
+      <trans-unit id="menu-save.title" xml:space="preserve">
+        <source>Save…</source>
+        <target>Save…</target>
+        <note>Class = "NSMenuItem"; title = "Save…"; ObjectID = "menu-save";</note>
+      </trans-unit>
+      <trans-unit id="menu-select-all.title" xml:space="preserve">
+        <source>Select All</source>
+        <target>Select All</target>
+        <note>Class = "NSMenuItem"; title = "Select All"; ObjectID = "menu-select-all";</note>
+      </trans-unit>
+      <trans-unit id="menu-services-menu.title" xml:space="preserve">
+        <source>Services</source>
+        <target>Services</target>
+        <note>Class = "NSMenu"; title = "Services"; ObjectID = "menu-services-menu";</note>
+      </trans-unit>
+      <trans-unit id="menu-services.title" xml:space="preserve">
+        <source>Services</source>
+        <target>Services</target>
+        <note>Class = "NSMenuItem"; title = "Services"; ObjectID = "menu-services";</note>
+      </trans-unit>
+      <trans-unit id="menu-show-all.title" xml:space="preserve">
+        <source>Show All</source>
+        <target>Show All</target>
+        <note>Class = "NSMenuItem"; title = "Show All"; ObjectID = "menu-show-all";</note>
+      </trans-unit>
+      <trans-unit id="menu-showGuessPanel.title" xml:space="preserve">
+        <source>Show Spelling and Grammar</source>
+        <target>Show Spelling and Grammar</target>
+        <note>Class = "NSMenuItem"; title = "Show Spelling and Grammar"; ObjectID = "menu-showGuessPanel";</note>
+      </trans-unit>
+      <trans-unit id="menu-speech-item.title" xml:space="preserve">
+        <source>Speech</source>
+        <target>Speech</target>
+        <note>Class = "NSMenuItem"; title = "Speech"; ObjectID = "menu-speech-item";</note>
+      </trans-unit>
+      <trans-unit id="menu-speech-menu.title" xml:space="preserve">
+        <source>Speech</source>
+        <target>Speech</target>
+        <note>Class = "NSMenu"; title = "Speech"; ObjectID = "menu-speech-menu";</note>
+      </trans-unit>
+      <trans-unit id="menu-spelling-grammar.title" xml:space="preserve">
+        <source>Spelling and Grammar</source>
+        <target>Spelling and Grammar</target>
+        <note>Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "menu-spelling-grammar";</note>
+      </trans-unit>
+      <trans-unit id="menu-spelling-menu.title" xml:space="preserve">
+        <source>Spelling</source>
+        <target>Spelling</target>
+        <note>Class = "NSMenu"; title = "Spelling"; ObjectID = "menu-spelling-menu";</note>
+      </trans-unit>
+      <trans-unit id="menu-start-speaking.title" xml:space="preserve">
+        <source>Start Speaking</source>
+        <target>Start Speaking</target>
+        <note>Class = "NSMenuItem"; title = "Start Speaking"; ObjectID = "menu-start-speaking";</note>
+      </trans-unit>
+      <trans-unit id="menu-stop-speaking.title" xml:space="preserve">
+        <source>Stop Speaking</source>
+        <target>Stop Speaking</target>
+        <note>Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "menu-stop-speaking";</note>
+      </trans-unit>
+      <trans-unit id="menu-substitutions-item.title" xml:space="preserve">
+        <source>Substitutions</source>
+        <target>Substitutions</target>
+        <note>Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "menu-substitutions-item";</note>
+      </trans-unit>
+      <trans-unit id="menu-substitutions-menu.title" xml:space="preserve">
+        <source>Substitutions</source>
+        <target>Substitutions</target>
+        <note>Class = "NSMenu"; title = "Substitutions"; ObjectID = "menu-substitutions-menu";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleAutomaticDashSubstitution.title" xml:space="preserve">
+        <source>Smart Dashes</source>
+        <target>Smart Dashes</target>
+        <note>Class = "NSMenuItem"; title = "Smart Dashes"; ObjectID = "menu-toggleAutomaticDashSubstitution";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleAutomaticDataDetection.title" xml:space="preserve">
+        <source>Data Detectors</source>
+        <target>Data Detectors</target>
+        <note>Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "menu-toggleAutomaticDataDetection";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleAutomaticLinkDetection.title" xml:space="preserve">
+        <source>Smart Links</source>
+        <target>Smart Links</target>
+        <note>Class = "NSMenuItem"; title = "Smart Links"; ObjectID = "menu-toggleAutomaticLinkDetection";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleAutomaticQuoteSubstitution.title" xml:space="preserve">
+        <source>Smart Quotes</source>
+        <target>Smart Quotes</target>
+        <note>Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "menu-toggleAutomaticQuoteSubstitution";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleAutomaticSpellingCorrection.title" xml:space="preserve">
+        <source>Correct Spelling Automatically</source>
+        <target>Correct Spelling Automatically</target>
+        <note>Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "menu-toggleAutomaticSpellingCorrection";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleAutomaticTextReplacement.title" xml:space="preserve">
+        <source>Text Replacement</source>
+        <target>Text Replacement</target>
+        <note>Class = "NSMenuItem"; title = "Text Replacement"; ObjectID = "menu-toggleAutomaticTextReplacement";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleContinuousSpellChecking.title" xml:space="preserve">
+        <source>Check Spelling While Typing</source>
+        <target>Check Spelling While Typing</target>
+        <note>Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "menu-toggleContinuousSpellChecking";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleGrammarChecking.title" xml:space="preserve">
+        <source>Check Grammar With Spelling</source>
+        <target>Check Grammar With Spelling</target>
+        <note>Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "menu-toggleGrammarChecking";</note>
+      </trans-unit>
+      <trans-unit id="menu-toggleSmartInsertDelete.title" xml:space="preserve">
+        <source>Smart Copy/Paste</source>
+        <target>Smart Copy/Paste</target>
+        <note>Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "menu-toggleSmartInsertDelete";</note>
+      </trans-unit>
+      <trans-unit id="menu-transformations-item.title" xml:space="preserve">
+        <source>Transformations</source>
+        <target>Transformations</target>
+        <note>Class = "NSMenuItem"; title = "Transformations"; ObjectID = "menu-transformations-item";</note>
+      </trans-unit>
+      <trans-unit id="menu-transformations.title" xml:space="preserve">
+        <source>Transformations</source>
+        <target>Transformations</target>
+        <note>Class = "NSMenu"; title = "Transformations"; ObjectID = "menu-transformations";</note>
+      </trans-unit>
+      <trans-unit id="menu-undo.title" xml:space="preserve">
+        <source>Undo</source>
+        <target>Undo</target>
+        <note>Class = "NSMenuItem"; title = "Undo"; ObjectID = "menu-undo";</note>
+      </trans-unit>
+      <trans-unit id="menu-uppercaseWord.title" xml:space="preserve">
+        <source>Make Upper Case</source>
+        <target>Make Upper Case</target>
+        <note>Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "menu-uppercaseWord";</note>
+      </trans-unit>
+      <trans-unit id="menu-user-guide.title" xml:space="preserve">
+        <source>User Guide</source>
+        <target>User Guide</target>
+        <note>Class = "NSMenuItem"; title = "User Guide"; ObjectID = "menu-user-guide";</note>
+      </trans-unit>
+      <trans-unit id="menu-window-menu.title" xml:space="preserve">
+        <source>Window</source>
+        <target>Window</target>
+        <note>Class = "NSMenu"; title = "Window"; ObjectID = "menu-window-menu";</note>
+      </trans-unit>
+      <trans-unit id="menu-window-top.title" xml:space="preserve">
+        <source>Window</source>
+        <target>Window</target>
+        <note>Class = "NSMenuItem"; title = "Window"; ObjectID = "menu-window-top";</note>
+      </trans-unit>
+      <trans-unit id="menu-zoom.title" xml:space="preserve">
+        <source>Zoom</source>
+        <target>Zoom</target>
+        <note>Class = "NSMenuItem"; title = "Zoom"; ObjectID = "menu-zoom";</note>
+      </trans-unit>
+      <trans-unit id="navigation-button-account.title" xml:space="preserve">
+        <source>Account</source>
+        <target>Account</target>
+        <note>Class = "NSButtonCell"; title = "Account"; ObjectID = "navigation-button-account";</note>
+      </trans-unit>
+      <trans-unit id="navigation-button-home.title" xml:space="preserve">
+        <source>Home</source>
+        <target>Home</target>
+        <note>Class = "NSButtonCell"; title = "Home"; ObjectID = "navigation-button-home";</note>
+      </trans-unit>
+      <trans-unit id="navigation-button-preferences.title" xml:space="preserve">
+        <source>Preferences</source>
+        <target>Preferences</target>
+        <note>Class = "NSButtonCell"; title = "Preferences"; ObjectID = "navigation-button-preferences";</note>
+      </trans-unit>
+      <trans-unit id="navigator-button-favorites.title" xml:space="preserve">
+        <source>Favorites</source>
+        <target>Favorites</target>
+        <note>Class = "NSButtonCell"; title = "Favorites"; ObjectID = "navigator-button-favorites";</note>
+      </trans-unit>
+      <trans-unit id="setting-browse-section.title" xml:space="preserve">
+        <source>Posts Browse</source>
+        <target>Posts Browse</target>
+        <note>Class = "NSTextFieldCell"; title = "Posts Browse"; ObjectID = "setting-browse-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-detail-section.title" xml:space="preserve">
+        <source>Post Detail</source>
+        <target>Post Detail</target>
+        <note>Class = "NSTextFieldCell"; title = "Post Detail"; ObjectID = "setting-detail-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-hide-post-size-fliter.title" xml:space="preserve">
+        <source>Hide posts whose size smaller than</source>
+        <target>Hide posts whose size smaller than</target>
+        <note>Class = "NSTextFieldCell"; title = "Hide posts whose size smaller than"; ObjectID = "setting-hide-post-size-fliter";</note>
+      </trans-unit>
+      <trans-unit id="setting-post-viewed-fliter.title" xml:space="preserve">
+        <source>Hide viewed posts</source>
+        <target>Hide viewed posts</target>
+        <note>Class = "NSButtonCell"; title = "Hide viewed posts"; ObjectID = "setting-post-viewed-fliter";</note>
+      </trans-unit>
+      <trans-unit id="setting-post-viewed-needs-sample-loadded.title" xml:space="preserve">
+        <source>Only mark viewed when sample fully loaded</source>
+        <target>Only mark viewed when sample fully loaded</target>
+        <note>Class = "NSButtonCell"; title = "Only mark viewed when sample fully loaded"; ObjectID = "setting-post-viewed-needs-sample-loadded";</note>
+      </trans-unit>
+      <trans-unit id="setting-viewed-in-list-fliter.title" xml:space="preserve">
+        <source>Hide posts viewed in list</source>
+        <target>Hide posts viewed in list</target>
+        <note>Class = "NSButtonCell"; title = "Hide posts viewed in list"; ObjectID = "setting-viewed-in-list-fliter";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-back.label" xml:space="preserve">
+        <source>Back</source>
+        <target>Back</target>
+        <note>Class = "NSToolbarItem"; label = "Back"; ObjectID = "toolbar-back";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-back.paletteLabel" xml:space="preserve">
+        <source>Back</source>
+        <target>Back</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Back"; ObjectID = "toolbar-back";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-back.toolTip" xml:space="preserve">
+        <source>Go Back</source>
+        <target>Go Back</target>
+        <note>Class = "NSToolbarItem"; toolTip = "Go Back"; ObjectID = "toolbar-back";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-browse-mode.label" xml:space="preserve">
+        <source>Browser Mode</source>
+        <target>Browser Mode</target>
+        <note>Class = "NSToolbarItem"; label = "Browser Mode"; ObjectID = "toolbar-browse-mode";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-browse-mode.paletteLabel" xml:space="preserve">
+        <source>Browser Mode</source>
+        <target>Browser Mode</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Browser Mode"; ObjectID = "toolbar-browse-mode";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-button.label" xml:space="preserve">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "NSToolbarItem"; label = "Button"; ObjectID = "toolbar-button";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-button.paletteLabel" xml:space="preserve">
+        <source>Button</source>
+        <target>Button</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Button"; ObjectID = "toolbar-button";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-favorite.label" xml:space="preserve">
+        <source>Favorite</source>
+        <target>Favorite</target>
+        <note>Class = "NSToolbarItem"; label = "Favorite"; ObjectID = "toolbar-favorite";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-favorite.paletteLabel" xml:space="preserve">
+        <source>Favorite</source>
+        <target>Favorite</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Favorite"; ObjectID = "toolbar-favorite";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-navigator-cell.title" xml:space="preserve">
+        <source>Title</source>
+        <target>Title</target>
+        <note>Class = "NSButtonCell"; title = "Title"; ObjectID = "toolbar-navigator-cell";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-navigator.label" xml:space="preserve">
+        <source>Navigator</source>
+        <target>Navigator</target>
+        <note>Class = "NSToolbarItem"; label = "Navigator"; ObjectID = "toolbar-navigator";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-navigator.paletteLabel" xml:space="preserve">
+        <source>Navigator</source>
+        <target>Navigator</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Navigator"; ObjectID = "toolbar-navigator";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-search.label" xml:space="preserve">
+        <source>Search</source>
+        <target>Search</target>
+        <note>Class = "NSSearchToolbarItem"; label = "Search"; ObjectID = "toolbar-search";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-search.paletteLabel" xml:space="preserve">
+        <source>Search</source>
+        <target>Search</target>
+        <note>Class = "NSSearchToolbarItem"; paletteLabel = "Search"; ObjectID = "toolbar-search";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-view-site.label" xml:space="preserve">
+        <source>View in Site</source>
+        <target>View in Site</target>
+        <note>Class = "NSToolbarItem"; label = "View in Site"; ObjectID = "toolbar-view-site";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-view-site.paletteLabel" xml:space="preserve">
+        <source>View in Site</source>
+        <target>View in Site</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "View in Site"; ObjectID = "toolbar-view-site";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-view-site.toolTip" xml:space="preserve">
+        <source>View in Site</source>
+        <target>View in Site</target>
+        <note>Class = "NSToolbarItem"; toolTip = "View in Site"; ObjectID = "toolbar-view-site";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-view-source.label" xml:space="preserve">
+        <source>View Source</source>
+        <target>View Source</target>
+        <note>Class = "NSToolbarItem"; label = "View Source"; ObjectID = "toolbar-view-source";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-view-source.paletteLabel" xml:space="preserve">
+        <source>View Source</source>
+        <target>View Source</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "View Source"; ObjectID = "toolbar-view-source";</note>
+      </trans-unit>
+      <trans-unit id="vc-about.title" xml:space="preserve">
+        <source>About</source>
+        <target>About</target>
+        <note>Class = "NSViewController"; title = "About"; ObjectID = "vc-about";</note>
+      </trans-unit>
+      <trans-unit id="vc-acknowledgement.title" xml:space="preserve">
+        <source>Acknowledgements</source>
+        <target>Acknowledgements</target>
+        <note>Class = "NSViewController"; title = "Acknowledgements"; ObjectID = "vc-acknowledgement";</note>
+      </trans-unit>
+      <trans-unit id="vc-favorite-list.title" xml:space="preserve">
+        <source>Favorites</source>
+        <target>Favorites</target>
+        <note>Class = "NSViewController"; title = "Favorites"; ObjectID = "vc-favorite-list";</note>
+      </trans-unit>
+      <trans-unit id="vc-post-list.title" xml:space="preserve">
+        <source>Posts</source>
+        <target>Posts</target>
+        <note>Class = "NSViewController"; title = "Posts"; ObjectID = "vc-post-list";</note>
+      </trans-unit>
+      <trans-unit id="vc-preferences.title" xml:space="preserve">
+        <source>Preferences</source>
+        <target>Preferences</target>
+        <note>Class = "NSViewController"; title = "Preferences"; ObjectID = "vc-preferences";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="App/Support/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>B9ImageBoard</source>
+        <target>B9ImageBoard</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
+        <source>Copyright © 2021 BB9z. All rights reserved.</source>
+        <target>Copyright © 2021 BB9z. All rights reserved.</target>
+        <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
