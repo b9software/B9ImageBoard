@@ -18,6 +18,11 @@
         <source>Copyright © 2021 BB9z. All rights reserved.</source>
         <note>Class = "NSTextFieldCell"; title = "Copyright © 2021 BB9z. All rights reserved."; ObjectID = "about-copyright"; Note = "Programmatically set, no translation required";</note>
       </trans-unit>
+      <trans-unit id="about-privacy.title" xml:space="preserve">
+        <source>Privacy Policy</source>
+        <target>隐私条款</target>
+        <note>Class = "NSButtonCell"; title = "Privacy Policy"; ObjectID = "about-privacy";</note>
+      </trans-unit>
       <trans-unit id="about-version.title" xml:space="preserve">
         <source>ver</source>
         <note>Class = "NSTextFieldCell"; title = "ver"; ObjectID = "about-version"; Note = "Programmatically set, no translation required";</note>

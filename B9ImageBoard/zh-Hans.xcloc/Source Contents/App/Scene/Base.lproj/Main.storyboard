@@ -1447,14 +1447,27 @@
                                                         <segue destination="vc-acknowledgement" kind="custom" customClass="NavigationPushSegue" customModule="B9ImageBoard" customModuleProvider="target" id="ngO-FF-KZn"/>
                                                     </connections>
                                                 </button>
+                                                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zZn-Bb-5R5">
+                                                    <rect key="frame" x="8" y="86" width="118" height="32"/>
+                                                    <buttonCell key="cell" type="push" title="Privacy Policy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="about-privacy">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="jumpToPrivacyPolicy:" target="vc-about" id="Yt7-hs-feR"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="zZn-Bb-5R5" firstAttribute="top" secondItem="Yyh-a7-Kb7" secondAttribute="bottom" constant="15" id="AAZ-80-CYS"/>
                                                 <constraint firstItem="Yyh-a7-Kb7" firstAttribute="leading" secondItem="FXc-q5-mUt" secondAttribute="leading" constant="15" id="AAj-ZU-giu"/>
                                                 <constraint firstAttribute="trailing" secondItem="Bsg-Bh-tfw" secondAttribute="trailing" constant="20" id="BMw-XH-XtR"/>
                                                 <constraint firstItem="Yyh-a7-Kb7" firstAttribute="top" secondItem="XZx-bw-BF2" secondAttribute="bottom" constant="20" id="Gg3-qx-oNQ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zZn-Bb-5R5" secondAttribute="trailing" constant="15" id="HEv-hX-kfI"/>
                                                 <constraint firstItem="XZx-bw-BF2" firstAttribute="leading" secondItem="FXc-q5-mUt" secondAttribute="leading" constant="15" id="P2o-U8-DFe"/>
                                                 <constraint firstItem="Bsg-Bh-tfw" firstAttribute="leading" secondItem="FXc-q5-mUt" secondAttribute="leading" constant="15" id="W9Q-uf-BAj"/>
                                                 <constraint firstItem="nrW-tz-FbX" firstAttribute="leading" secondItem="FXc-q5-mUt" secondAttribute="leading" constant="15" id="XQQ-vw-nc9"/>
+                                                <constraint firstItem="zZn-Bb-5R5" firstAttribute="leading" secondItem="Yyh-a7-Kb7" secondAttribute="leading" id="YYN-wc-eb6"/>
                                                 <constraint firstAttribute="trailing" secondItem="nrW-tz-FbX" secondAttribute="trailing" constant="20" id="dB6-UJ-L5b"/>
                                                 <constraint firstItem="Bsg-Bh-tfw" firstAttribute="top" secondItem="FXc-q5-mUt" secondAttribute="top" constant="30" id="e97-NC-TJD"/>
                                                 <constraint firstItem="nrW-tz-FbX" firstAttribute="top" secondItem="Bsg-Bh-tfw" secondAttribute="bottom" constant="10" id="h3i-ru-Ahe"/>

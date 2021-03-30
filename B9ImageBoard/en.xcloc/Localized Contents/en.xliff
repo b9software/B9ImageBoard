@@ -20,6 +20,11 @@
         <target>Copyright © 2021 BB9z. All rights reserved.</target>
         <note>Class = "NSTextFieldCell"; title = "Copyright © 2021 BB9z. All rights reserved."; ObjectID = "about-copyright"; Note = "Programmatically set, no translation required";</note>
       </trans-unit>
+      <trans-unit id="about-privacy.title" xml:space="preserve">
+        <source>Privacy Policy</source>
+        <target>Privacy Policy</target>
+        <note>Class = "NSButtonCell"; title = "Privacy Policy"; ObjectID = "about-privacy";</note>
+      </trans-unit>
       <trans-unit id="about-version.title" xml:space="preserve">
         <source>ver</source>
         <target>ver</target>
