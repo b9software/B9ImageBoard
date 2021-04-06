@@ -5,6 +5,11 @@
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
     </header>
     <body>
+      <trans-unit id="Nak-eM-beS.title" xml:space="preserve">
+        <source>...</source>
+        <target>...</target>
+        <note>Class = "NSTextFieldCell"; title = "..."; ObjectID = "Nak-eM-beS";</note>
+      </trans-unit>
       <trans-unit id="about-acknowledgements.title" xml:space="preserve">
         <source>Acknowledgements</source>
         <target>Acknowledgements</target>
@@ -29,6 +34,31 @@
         <source>ver</source>
         <target>ver</target>
         <note>Class = "NSTextFieldCell"; title = "ver"; ObjectID = "about-version"; Note = "Programmatically set, no translation required";</note>
+      </trans-unit>
+      <trans-unit id="detail-menu-download.title" xml:space="preserve">
+        <source>Download Image</source>
+        <target>Download Image</target>
+        <note>Class = "NSMenuItem"; title = "Download Image"; ObjectID = "detail-menu-download";</note>
+      </trans-unit>
+      <trans-unit id="detail-menu-downloadOrginal.title" xml:space="preserve">
+        <source>Download Original</source>
+        <target>Download Original</target>
+        <note>Class = "NSMenuItem"; title = "Download Original"; ObjectID = "detail-menu-downloadOrginal";</note>
+      </trans-unit>
+      <trans-unit id="detail-menu-operation.title" xml:space="preserve">
+        <source>Operation</source>
+        <target>Operation</target>
+        <note>Class = "NSMenu"; title = "Operation"; ObjectID = "detail-menu-operation";</note>
+      </trans-unit>
+      <trans-unit id="detail-menu-setDesktop.title" xml:space="preserve">
+        <source>Set as Desktop Image</source>
+        <target>Set as Desktop Image</target>
+        <note>Class = "NSMenuItem"; title = "Set as Desktop Image"; ObjectID = "detail-menu-setDesktop";</note>
+      </trans-unit>
+      <trans-unit id="fhh-2g-Xk8.title" xml:space="preserve">
+        <source>...</source>
+        <target>...</target>
+        <note>Class = "NSTextFieldCell"; title = "..."; ObjectID = "fhh-2g-Xk8"; Note = "Programmatically set, no translation required";</note>
       </trans-unit>
       <trans-unit id="home-new-post-button.title" xml:space="preserve">
         <source>New post notice</source>
@@ -260,6 +290,21 @@
         <target>Minimize</target>
         <note>Class = "NSMenuItem"; title = "Minimize"; ObjectID = "menu-minimize";</note>
       </trans-unit>
+      <trans-unit id="menu-operation-default.title" xml:space="preserve">
+        <source>Operation</source>
+        <target>Operation</target>
+        <note>Class = "NSMenu"; title = "Operation"; ObjectID = "menu-operation-default";</note>
+      </trans-unit>
+      <trans-unit id="menu-operation-empty.title" xml:space="preserve">
+        <source>No special commands</source>
+        <target>No special commands</target>
+        <note>Class = "NSMenuItem"; title = "No special commands"; ObjectID = "menu-operation-empty";</note>
+      </trans-unit>
+      <trans-unit id="menu-operation-top.title" xml:space="preserve">
+        <source>Operation</source>
+        <target>Operation</target>
+        <note>Class = "NSMenuItem"; title = "Operation"; ObjectID = "menu-operation-top";</note>
+      </trans-unit>
       <trans-unit id="menu-orderFrontSubstitutionsPanel.title" xml:space="preserve">
         <source>Show Substitutions</source>
         <target>Show Substitutions</target>
@@ -480,6 +525,26 @@
         <target>Post Detail</target>
         <note>Class = "NSTextFieldCell"; title = "Post Detail"; ObjectID = "setting-detail-section";</note>
       </trans-unit>
+      <trans-unit id="setting-download-destionation-change.title" xml:space="preserve">
+        <source>Change</source>
+        <target>Change</target>
+        <note>Class = "NSButtonCell"; title = "Change"; ObjectID = "setting-download-destionation-change";</note>
+      </trans-unit>
+      <trans-unit id="setting-download-location-detail.title" xml:space="preserve">
+        <source>...</source>
+        <target>...</target>
+        <note>Class = "NSTextFieldCell"; title = "..."; ObjectID = "setting-download-location-detail"; Note = "Programmatically set, no translation required";</note>
+      </trans-unit>
+      <trans-unit id="setting-download-location-title.title" xml:space="preserve">
+        <source>Location</source>
+        <target>Location</target>
+        <note>Class = "NSTextFieldCell"; title = "Location"; ObjectID = "setting-download-location-title";</note>
+      </trans-unit>
+      <trans-unit id="setting-downloat-section.title" xml:space="preserve">
+        <source>Download</source>
+        <target>Download</target>
+        <note>Class = "NSTextFieldCell"; title = "Download"; ObjectID = "setting-downloat-section";</note>
+      </trans-unit>
       <trans-unit id="setting-hide-post-size-fliter.title" xml:space="preserve">
         <source>Hide posts whose size smaller than</source>
         <target>Hide posts whose size smaller than</target>
@@ -620,6 +685,11 @@
         <target>Preferences</target>
         <note>Class = "NSViewController"; title = "Preferences"; ObjectID = "vc-preferences";</note>
       </trans-unit>
+      <trans-unit id="xop-Ma-vuU.title" xml:space="preserve">
+        <source>Cache</source>
+        <target>Cache</target>
+        <note>Class = "NSTextFieldCell"; title = "Cache"; ObjectID = "xop-Ma-vuU";</note>
+      </trans-unit>
     </body>
   </file>
   <file original="App/Support/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
@@ -636,6 +706,43 @@
         <source>Copyright © 2021 BB9z. All rights reserved.</source>
         <target>Copyright © 2021 BB9z. All rights reserved.</target>
         <note>Copyright (human-readable)</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="App/Support/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+    </header>
+    <body>
+      <trans-unit id="DETAIL-IMAGE-URL-NULL-ERROR" xml:space="preserve">
+        <source>Image URL is null.</source>
+        <target>Image URL is null.</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="DETAIL-REACH-TOP" xml:space="preserve">
+        <source>At the top</source>
+        <target>At the top</target>
+        <note>Detail swipe reach the top</note>
+      </trans-unit>
+      <trans-unit id="DOWNLOAD-CHOOSE-DIRECTORY-PANEL-BUTTON" xml:space="preserve">
+        <source>Choose</source>
+        <target>Choose</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="DOWNLOAD-CHOOSE-DIRECTORY-PANEL-MESSAGE" xml:space="preserve">
+        <source>Choose a directoriy to save</source>
+        <target>Choose a directoriy to save</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="SETTING-DOWNLOAD-DIRECTORY-NOT-SET" xml:space="preserve">
+        <source>Path has not been specified.</source>
+        <target>Path has not been specified.</target>
+        <note>In Preference</note>
+      </trans-unit>
+      <trans-unit id="STREAM-NEW-POST" xml:space="preserve">
+        <source>There are some new posts, click to view.</source>
+        <target>There are some new posts, click to view.</target>
+        <note>No comment provided by engineer.</note>
       </trans-unit>
     </body>
   </file>
