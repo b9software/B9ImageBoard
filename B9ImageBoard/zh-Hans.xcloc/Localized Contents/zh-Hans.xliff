@@ -9,10 +9,6 @@
         <source>Item 2</source>
         <note>Class = "NSMenuItem"; title = "Item 2"; ObjectID = "A2H-X7-p5h";</note>
       </trans-unit>
-      <trans-unit id="TEu-vO-4YX.title" xml:space="preserve">
-        <source>Item 3</source>
-        <note>Class = "NSMenuItem"; title = "Item 3"; ObjectID = "TEu-vO-4YX";</note>
-      </trans-unit>
       <trans-unit id="ZdU-96-kHD.title" xml:space="preserve">
         <source>Item 1</source>
         <note>Class = "NSMenuItem"; title = "Item 1"; ObjectID = "ZdU-96-kHD";</note>
@@ -38,6 +34,11 @@
       <trans-unit id="about-version.title" xml:space="preserve">
         <source>ver</source>
         <note>Class = "NSTextFieldCell"; title = "ver"; ObjectID = "about-version"; Note = "🚩NO NEEDS";</note>
+      </trans-unit>
+      <trans-unit id="detail-menu-block-tag.title" xml:space="preserve">
+        <source>Block Tags</source>
+        <target>添加标签黑名单</target>
+        <note>Class = "NSMenuItem"; title = "Block Tags"; ObjectID = "detail-menu-block-tag";</note>
       </trans-unit>
       <trans-unit id="detail-menu-download.title" xml:space="preserve">
         <source>Download Image</source>
@@ -214,6 +215,11 @@
         <target>编辑</target>
         <note>Class = "NSMenuItem"; title = "Edit"; ObjectID = "menu-edit-top";</note>
       </trans-unit>
+      <trans-unit id="menu-favorite-list-refresh.title" xml:space="preserve">
+        <source>Refresh</source>
+        <target>刷新</target>
+        <note>Class = "NSMenuItem"; title = "Refresh"; ObjectID = "menu-favorite-list-refresh";</note>
+      </trans-unit>
       <trans-unit id="menu-find-item.title" xml:space="preserve">
         <source>Find</source>
         <target>查找</target>
@@ -274,6 +280,16 @@
         <target>隐藏 B9ImageBoard</target>
         <note>Class = "NSMenuItem"; title = "Hide B9ImageBoard"; ObjectID = "menu-hide";</note>
       </trans-unit>
+      <trans-unit id="menu-jump-favorite.title" xml:space="preserve">
+        <source>Favorites</source>
+        <target>我的收藏</target>
+        <note>Class = "NSMenuItem"; title = "Favorites"; ObjectID = "menu-jump-favorite";</note>
+      </trans-unit>
+      <trans-unit id="menu-jump-home.title" xml:space="preserve">
+        <source>Home</source>
+        <target>主页</target>
+        <note>Class = "NSMenuItem"; title = "Home"; ObjectID = "menu-jump-home";</note>
+      </trans-unit>
       <trans-unit id="menu-jump-selection.title" xml:space="preserve">
         <source>Jump to Selection</source>
         <target>跳到所选内容</target>
@@ -300,19 +316,19 @@
         <note>Class = "NSMenuItem"; title = "Move to top"; ObjectID = "menu-move-top";</note>
       </trans-unit>
       <trans-unit id="menu-navigate-back.title" xml:space="preserve">
-        <source>Go Back</source>
+        <source>Back</source>
         <target>返回</target>
-        <note>Class = "NSMenuItem"; title = "Go Back"; ObjectID = "menu-navigate-back";</note>
+        <note>Class = "NSMenuItem"; title = "Back"; ObjectID = "menu-navigate-back";</note>
       </trans-unit>
       <trans-unit id="menu-navigate-top.title" xml:space="preserve">
-        <source>Navigate</source>
+        <source>Go</source>
         <target>导航</target>
-        <note>Class = "NSMenuItem"; title = "Navigate"; ObjectID = "menu-navigate-top";</note>
+        <note>Class = "NSMenuItem"; title = "Go"; ObjectID = "menu-navigate-top";</note>
       </trans-unit>
       <trans-unit id="menu-navigate.title" xml:space="preserve">
-        <source>Navigate</source>
+        <source>Go</source>
         <target>导航</target>
-        <note>Class = "NSMenu"; title = "Navigate"; ObjectID = "menu-navigate";</note>
+        <note>Class = "NSMenu"; title = "Go"; ObjectID = "menu-navigate";</note>
       </trans-unit>
       <trans-unit id="menu-operation-default.title" xml:space="preserve">
         <source>Operation</source>
@@ -413,6 +429,11 @@
         <source>Stop Speaking</source>
         <target>停止朗读</target>
         <note>Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "menu-stop-speaking";</note>
+      </trans-unit>
+      <trans-unit id="menu-stream-list-refresh.title" xml:space="preserve">
+        <source>Refresh</source>
+        <target>刷新</target>
+        <note>Class = "NSMenuItem"; title = "Refresh"; ObjectID = "menu-stream-list-refresh";</note>
       </trans-unit>
       <trans-unit id="menu-substitutions-item.title" xml:space="preserve">
         <source>Substitutions</source>
@@ -526,7 +547,7 @@
       </trans-unit>
       <trans-unit id="navigator-button-favorites.title" xml:space="preserve">
         <source>Favorites</source>
-        <target>收藏</target>
+        <target>我的收藏</target>
         <note>Class = "NSButtonCell"; title = "Favorites"; ObjectID = "navigator-button-favorites";</note>
       </trans-unit>
       <trans-unit id="setting-appearance-label.title" xml:space="preserve">
@@ -695,6 +716,16 @@
         <source>Favorite</source>
         <target>收藏</target>
         <note>Class = "NSToolbarItem"; paletteLabel = "Favorite"; ObjectID = "toolbar-favorite";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-flag.label" xml:space="preserve">
+        <source>Flag as Inappropriate</source>
+        <target>举报不当内容</target>
+        <note>Class = "NSToolbarItem"; label = "Flag as Inappropriate"; ObjectID = "toolbar-flag";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-flag.paletteLabel" xml:space="preserve">
+        <source>Flag as Inappropriate</source>
+        <target>举报不当内容</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Flag as Inappropriate"; ObjectID = "toolbar-flag";</note>
       </trans-unit>
       <trans-unit id="toolbar-navigator-cell.title" xml:space="preserve">
         <source>Title</source>
@@ -925,6 +956,11 @@
         <target>重置</target>
         <note>Reset database alert button</note>
       </trans-unit>
+      <trans-unit id="ALERT-SYSTEM-SETTING" xml:space="preserve">
+        <source>System Preferences</source>
+        <target>系统偏好设置</target>
+        <note>Open iCloud System Preferences</note>
+      </trans-unit>
       <trans-unit id="CACHE-CLEAN-ALL-CONFIRM-MESSAGE" xml:space="preserve">
         <source>You cannot undo this action.</source>
         <target>此操作无法撤销</target>
@@ -1001,7 +1037,7 @@
         <note>Launch check</note>
       </trans-unit>
       <trans-unit id="LaunchError-DBTooNewMessage" xml:space="preserve">
-        <source>It seems that you have used a higher version of this app before. It is highly recommended to upgrade to the latest version.
+        <source>It seems that you have used a higher version of this app before, but downgrading is not supported. It is highly recommended to upgrade to the latest version.
 
 Howerver, if you choose continue, you may experience a crash or even data corruption, although it may work normally.</source>
         <target>可能你之前在用应用的更高版本，我们不支持应用降级，强烈推荐你升级到最新版本。
@@ -1013,6 +1049,11 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <source>Downgraded Database File</source>
         <target>高版本的数据库文件</target>
         <note>Launch check</note>
+      </trans-unit>
+      <trans-unit id="POST-FLAG-SUCCESS" xml:space="preserve">
+        <source>Thanks. I will look at it.</source>
+        <target>谢谢，我会稍后检查它</target>
+        <note>In HUD</note>
       </trans-unit>
       <trans-unit id="STREAM-NEW-POST" xml:space="preserve">
         <source>There are some new posts, click to view.</source>
@@ -1071,6 +1112,16 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <source>No internet connection, please check</source>
         <target>没有联网，请检查网络连接</target>
         <note>URLError</note>
+      </trans-unit>
+      <trans-unit id="iCloud-TURN-ON-MESSAGE" xml:space="preserve">
+        <source>Send anonymous flag requires you to turn on iCloud for (App().displayName).</source>
+        <target>发送匿名举报需要你允许 B9ImageBoard 使用 iCloud。</target>
+        <note>iCloud No Account</note>
+      </trans-unit>
+      <trans-unit id="iCloud-TURN-ON-TITLE" xml:space="preserve">
+        <source>Turn On iCloud</source>
+        <target>打开 iCloud</target>
+        <note>iCloud No Account</note>
       </trans-unit>
     </body>
   </file>

@@ -286,34 +286,43 @@ CA
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Navigate" id="menu-navigate-top">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Navigate" id="menu-navigate">
-                                    <items>
-                                        <menuItem title="Go Back" keyEquivalent="[" id="menu-navigate-back">
-                                            <connections>
-                                                <action selector="navigationPop:" target="Ady-hI-5gd" id="mfW-dm-70D"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="md7-nX-rUS"/>
-                                        <menuItem title="Move to top" id="menu-move-top">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="moveToBeginningOfDocument:" target="Ady-hI-5gd" id="T2V-ny-EUB"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Item 3" id="TEu-vO-4YX">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
                             <menuItem title="Operation" id="menu-operation-top" customClass="ContextMenuItem" customModule="B9ImageBoard" customModuleProvider="target">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Operation" id="menu-operation-default">
                                     <items>
                                         <menuItem title="No special commands" enabled="NO" id="menu-operation-empty">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Go" id="menu-navigate-top">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Go" id="menu-navigate">
+                                    <items>
+                                        <menuItem title="Back" keyEquivalent="[" id="menu-navigate-back">
+                                            <connections>
+                                                <action selector="navigationPop:" target="Ady-hI-5gd" id="mfW-dm-70D"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="md7-nX-rUS"/>
+                                        <menuItem title="Move to top" hidden="YES" id="menu-move-top">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="moveToBeginningOfDocument:" target="Ady-hI-5gd" id="T2V-ny-EUB"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Home" keyEquivalent="1" id="menu-jump-home">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="jumpToHome:" target="Ady-hI-5gd" id="NIZ-nb-Ejp"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Favorites" keyEquivalent="2" id="menu-jump-favorite">
+                                            <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="jumpToFavorite:" target="Ady-hI-5gd" id="k1d-Go-Wez"/>
+                                            </connections>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -448,7 +457,7 @@ CA
                                 <menu key="submenu" title="Help" systemMenu="help" id="menu-help">
                                     <items>
                                         <menuItem title="User Guide" keyEquivalent="?" id="menu-user-guide">
-                                            <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="small"/>
+                                            <imageReference key="image" image="external_link" symbolScale="small"/>
                                             <connections>
                                                 <action selector="openUserGuide:" target="ibid-application" id="Y59-9q-BTR"/>
                                             </connections>
@@ -1061,6 +1070,7 @@ CA
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="_operationMenu" destination="B7R-mq-Rbs" id="7ln-oC-3Fe"/>
                         <outlet property="listDataSource" destination="BUN-4p-hHl" id="eIi-qn-vVE"/>
                         <outlet property="listView" destination="0oJ-iX-Aul" id="5BQ-kb-NxB"/>
                         <outlet property="toolbar" destination="1M9-fb-C9e" id="dMj-on-47D"/>
@@ -1080,8 +1090,6 @@ CA
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="arrow.triangle.2.circlepath" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WPM-9c-3gm">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent">r</string>
-                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                 </buttonCell>
                             </button>
                             <connections>
@@ -1093,6 +1101,15 @@ CA
                         <toolbarItem reference="toolbar-refresh-favorite"/>
                     </defaultToolbarItems>
                 </toolbar>
+                <menu id="B7R-mq-Rbs">
+                    <items>
+                        <menuItem title="Refresh" keyEquivalent="r" id="menu-favorite-list-refresh">
+                            <connections>
+                                <action selector="refresh:" target="vc-favorite-list" id="Hxo-2P-MSR"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
                 <customObject id="BUN-4p-hHl" customClass="PostFavoriteDataSource" customModule="B9ImageBoard" customModuleProvider="target">
                     <connections>
                         <outlet property="listView" destination="0oJ-iX-Aul" id="XGM-Ag-VXN"/>
@@ -1100,7 +1117,7 @@ CA
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="-568" y="783"/>
+            <point key="canvasLocation" x="-434" y="783"/>
         </scene>
         <!--Posts-->
         <scene sceneID="hIz-AP-VOD">
@@ -1210,6 +1227,7 @@ CA
                         <viewLayoutGuide key="layoutMargins" id="HMy-AX-j2Z"/>
                     </view>
                     <connections>
+                        <outlet property="_operationMenu" destination="4VT-bK-HbS" id="OpT-P8-gGB"/>
                         <outlet property="fetchingIndicator" destination="XQp-hx-VtC" id="qYh-yC-koI"/>
                         <outlet property="listDataSource" destination="CGY-04-UI1" id="q4K-pU-vXy"/>
                         <outlet property="listView" destination="lR8-U5-vze" id="25z-37-91A"/>
@@ -1232,8 +1250,6 @@ CA
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="arrow.triangle.2.circlepath" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S1S-K9-tge">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
-                                    <string key="keyEquivalent">r</string>
-                                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                                 </buttonCell>
                             </button>
                             <connections>
@@ -1271,6 +1287,15 @@ CA
                         <toolbarItem reference="toolbar-refresh-stream"/>
                     </defaultToolbarItems>
                 </toolbar>
+                <menu id="4VT-bK-HbS">
+                    <items>
+                        <menuItem title="Refresh" keyEquivalent="r" id="menu-stream-list-refresh">
+                            <connections>
+                                <action selector="refresh:" target="vc-post-list" id="FkE-f2-dla"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
                 <customObject id="CGY-04-UI1" customClass="PostStreamDataSource" customModule="B9ImageBoard" customModuleProvider="target">
                     <connections>
                         <outlet property="listView" destination="lR8-U5-vze" id="H1I-iA-v1r"/>
@@ -1278,7 +1303,7 @@ CA
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="-125" y="783"/>
+            <point key="canvasLocation" x="35" y="783"/>
         </scene>
         <!--Post Detail View Controller-->
         <scene sceneID="L96-n8-TVZ">
@@ -1481,9 +1506,12 @@ CA
                     </view>
                     <connections>
                         <outlet property="_operationMenu" destination="detail-menu-operation" id="cM8-t1-lTu"/>
+                        <outlet property="blockTagMenu" destination="zOY-DJ-f0X" id="V6i-6j-n2g"/>
                         <outlet property="clipView" destination="vz0-xn-TPM" id="Kli-N7-cR1"/>
                         <outlet property="favoriteButton" destination="Ljl-JU-Y8E" id="AN0-z2-fbn"/>
                         <outlet property="favoriteToolbarItem" destination="toolbar-favorite" id="N6U-67-pNJ"/>
+                        <outlet property="flagButton" destination="5vA-dH-dSn" id="HYY-vI-f7Y"/>
+                        <outlet property="flagToobarItem" destination="toolbar-flag" id="csg-gf-fZT"/>
                         <outlet property="imageLoadContainer" destination="22R-iw-gwC" id="oIT-Sy-U9r"/>
                         <outlet property="imageLoadIndicator" destination="zdH-U0-fGR" id="yG9-kU-c0g"/>
                         <outlet property="imageView" destination="R4M-Uj-Dwm" id="5Q9-F5-kcB"/>
@@ -1496,72 +1524,99 @@ CA
                         <outlet property="rotateToolbarItem" destination="toolbar-rotate" id="t2z-p6-h38"/>
                         <outlet property="scrollView" destination="Moo-SQ-TpC" id="UP8-9M-N9I"/>
                         <outlet property="sourceItemView" destination="R4M-Uj-Dwm" id="lRX-WM-vBj"/>
+                        <outlet property="toolbar" destination="8dH-K0-8gm" id="Px7-3O-pz3"/>
                         <outlet property="viewInSiteToolbarItem" destination="toolbar-view-site" id="wAJ-Pb-tKl"/>
                         <outlet property="viewSourceToolbarItem" destination="toolbar-view-source" id="Yvy-k5-Upd"/>
                     </connections>
                 </viewController>
                 <customObject id="Dgg-Ul-4VA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-                <toolbarItem implicitItemIdentifier="E0304047-844E-49B3-A563-1B33CE129474" explicitItemIdentifier="Detail-Rotate" label="Rotate" paletteLabel="Rotate" image="rotate.left" catalog="system" sizingBehavior="auto" autovalidates="NO" id="toolbar-rotate">
-                    <nil key="toolTip"/>
-                    <button key="view" verticalHuggingPriority="750" id="fwO-Yj-3Lb">
-                        <rect key="frame" x="6" y="14" width="30" height="23"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="rotate.left" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S0U-r7-2WI">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <connections>
-                        <action selector="onRotate:" target="vc-post-detail" id="qAd-HH-qMN"/>
-                    </connections>
-                </toolbarItem>
-                <toolbarItem implicitItemIdentifier="E0B027F9-57A4-41DB-856B-4D502D17D533" label="Favorite" paletteLabel="Favorite" image="favorite" sizingBehavior="auto" autovalidates="NO" id="toolbar-favorite">
-                    <nil key="toolTip"/>
-                    <button key="view" verticalHuggingPriority="750" id="Ljl-JU-Y8E">
-                        <rect key="frame" x="10" y="14" width="29" height="23"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="favorite" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nJ9-go-5hx">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <connections>
-                        <action selector="toggleFavorite:" target="vc-post-detail" id="Y1f-GE-A8S"/>
-                    </connections>
-                </toolbarItem>
-                <toolbarItem implicitItemIdentifier="F8BCBD69-4C3C-446E-847E-FD5B2E271041" label="View Source" paletteLabel="View Source" image="network" catalog="system" sizingBehavior="auto" autovalidates="NO" id="toolbar-view-source">
-                    <nil key="toolTip"/>
-                    <button key="view" verticalHuggingPriority="750" misplaced="YES" id="UXu-fb-ecy">
-                        <rect key="frame" x="23" y="14" width="27" height="23"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="32" id="ezF-ak-BPt"/>
-                        </constraints>
-                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="network" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="92b-1a-aS6">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <connections>
-                        <action selector="onViewSource:" target="vc-post-detail" id="WJn-Tv-TSx"/>
-                    </connections>
-                </toolbarItem>
-                <toolbarItem implicitItemIdentifier="88892794-5134-4710-B472-7968E921E5F4" label="View in Site" paletteLabel="View in Site" toolTip="View in Site" image="logo44t" sizingBehavior="auto" autovalidates="NO" id="toolbar-view-site">
-                    <button key="view" verticalHuggingPriority="750" misplaced="YES" id="BtY-R5-pwX">
-                        <rect key="frame" x="19" y="14" width="30" height="23"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="32" id="Qz9-Vh-yzf"/>
-                        </constraints>
-                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="logo44t" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lR8-NT-gFI">
-                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <connections>
-                        <action selector="onViewInSite:" target="vc-post-detail" id="1Ye-X1-Q0j"/>
-                    </connections>
-                </toolbarItem>
+                <toolbar implicitIdentifier="09D11707-F4A3-4FD5-970E-AC5832E91C2B" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="8dH-K0-8gm">
+                    <allowedToolbarItems>
+                        <toolbarItem implicitItemIdentifier="15F35BE3-E50D-4D85-80C5-F69C73A4CFD0" explicitItemIdentifier="Detail-Rotate" label="Rotate" paletteLabel="Rotate" image="rotate.left" catalog="system" visibilityPriority="4" sizingBehavior="auto" autovalidates="NO" id="toolbar-rotate">
+                            <nil key="toolTip"/>
+                            <button key="view" verticalHuggingPriority="750" id="fwO-Yj-3Lb">
+                                <rect key="frame" x="7" y="14" width="28" height="23"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="rotate.left" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S0U-r7-2WI">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <connections>
+                                <action selector="onRotate:" target="vc-post-detail" id="qAd-HH-qMN"/>
+                            </connections>
+                        </toolbarItem>
+                        <toolbarItem implicitItemIdentifier="4F8198CE-95FA-4D47-B641-6869CD023F55" explicitItemIdentifier="Detail-Flag" label="Flag as Inappropriate" paletteLabel="Flag as Inappropriate" visibilityPriority="1" sizingBehavior="auto" autovalidates="NO" id="toolbar-flag">
+                            <nil key="toolTip"/>
+                            <imageReference key="image" image="flag_off" symbolScale="default" renderingMode="template"/>
+                            <button key="view" verticalHuggingPriority="750" id="5vA-dH-dSn">
+                                <rect key="frame" x="44" y="14" width="30" height="23"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kwF-Xt-Ajg">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <imageReference key="image" image="flag_off" symbolScale="default" renderingMode="template"/>
+                                </buttonCell>
+                            </button>
+                            <connections>
+                                <action selector="onFlag:" target="vc-post-detail" id="RBK-dr-FVP"/>
+                            </connections>
+                        </toolbarItem>
+                        <toolbarItem implicitItemIdentifier="1F74AB05-BF25-4E7B-B96D-7237D4C4CAF1" explicitItemIdentifier="Detail-Favorite" label="Favorite" paletteLabel="Favorite" image="favorite" visibilityPriority="5" sizingBehavior="auto" autovalidates="NO" id="toolbar-favorite">
+                            <nil key="toolTip"/>
+                            <button key="view" verticalHuggingPriority="750" id="Ljl-JU-Y8E">
+                                <rect key="frame" x="10" y="14" width="30" height="23"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="favorite" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nJ9-go-5hx">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <connections>
+                                <action selector="toggleFavorite:" target="vc-post-detail" id="Y1f-GE-A8S"/>
+                            </connections>
+                        </toolbarItem>
+                        <toolbarItem implicitItemIdentifier="20F21C43-E748-4974-A37A-D6E18D1C3601" explicitItemIdentifier="Detail-Source" label="View Source" paletteLabel="View Source" image="network" catalog="system" visibilityPriority="2" sizingBehavior="auto" autovalidates="NO" id="toolbar-view-source">
+                            <nil key="toolTip"/>
+                            <button key="view" verticalHuggingPriority="750" misplaced="YES" id="UXu-fb-ecy">
+                                <rect key="frame" x="23" y="14" width="27" height="23"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="ezF-ak-BPt"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="network" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="92b-1a-aS6">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <connections>
+                                <action selector="onViewSource:" target="vc-post-detail" id="WJn-Tv-TSx"/>
+                            </connections>
+                        </toolbarItem>
+                        <toolbarItem implicitItemIdentifier="AB0BC7FB-5025-4476-A10D-76D188A1738D" explicitItemIdentifier="Detail-View" label="View in Site" paletteLabel="View in Site" toolTip="View in Site" image="logo44t" visibilityPriority="3" sizingBehavior="auto" autovalidates="NO" id="toolbar-view-site">
+                            <button key="view" verticalHuggingPriority="750" misplaced="YES" id="BtY-R5-pwX">
+                                <rect key="frame" x="19" y="14" width="30" height="23"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Qz9-Vh-yzf"/>
+                                </constraints>
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="logo44t" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lR8-NT-gFI">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <connections>
+                                <action selector="onViewInSite:" target="vc-post-detail" id="1Ye-X1-Q0j"/>
+                            </connections>
+                        </toolbarItem>
+                    </allowedToolbarItems>
+                    <defaultToolbarItems>
+                        <toolbarItem reference="toolbar-flag"/>
+                        <toolbarItem reference="toolbar-view-site"/>
+                        <toolbarItem reference="toolbar-view-source"/>
+                        <toolbarItem reference="toolbar-favorite"/>
+                    </defaultToolbarItems>
+                </toolbar>
                 <menu title="Operation" autoenablesItems="NO" id="detail-menu-operation">
                     <items>
                         <menuItem title="Toggle Favorite" keyEquivalent="d" id="detail-menu-favorite">
@@ -1574,10 +1629,18 @@ CA
                                 <action selector="imageDownloadJPG:" target="vc-post-detail" id="JNI-nW-52Y"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Download Original" alternate="YES" keyEquivalent="S" id="detail-menu-downloadOrginal">
+                        <menuItem title="Download Original" keyEquivalent="S" id="detail-menu-downloadOrginal">
                             <connections>
                                 <action selector="imageDownloadOriginal:" target="vc-post-detail" id="26W-iS-ehF"/>
                             </connections>
+                        </menuItem>
+                        <menuItem title="Block Tags" id="detail-menu-block-tag">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" id="zOY-DJ-f0X">
+                                <connections>
+                                    <outlet property="delegate" destination="vc-post-detail" id="2lR-Kd-1aH"/>
+                                </connections>
+                            </menu>
                         </menuItem>
                         <menuItem title="Set as Desktop Image" hidden="YES" enabled="NO" id="detail-menu-setDesktop">
                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -1588,7 +1651,7 @@ CA
                     </items>
                 </menu>
             </objects>
-            <point key="canvasLocation" x="343" y="783"/>
+            <point key="canvasLocation" x="35" y="1254"/>
         </scene>
         <!--Preferences-->
         <scene sceneID="JpU-VA-TfW">
@@ -2333,13 +2396,13 @@ CA
                                                                 <segue destination="vc-acknowledgement" kind="custom" customClass="NavigationPushSegue" customModule="B9ImageBoard" customModuleProvider="target" id="ngO-FF-KZn"/>
                                                             </connections>
                                                         </button>
-                                                        <button hidden="YES" verticalHuggingPriority="750" id="zZn-Bb-5R5">
+                                                        <button verticalHuggingPriority="750" imageHugsTitle="YES" id="zZn-Bb-5R5">
                                                             <rect key="frame" x="144" y="-7" width="130" height="32"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <buttonCell key="cell" type="push" title="Privacy Policy" bezelStyle="rounded" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="about-privacy">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="system"/>
-                                                                <imageReference key="image" image="paperplane.fill" catalog="system" symbolScale="small"/>
+                                                                <imageReference key="image" image="external_link" symbolScale="small"/>
                                                             </buttonCell>
                                                             <connections>
                                                                 <action selector="jumpToPrivacyPolicy:" target="vc-about" id="Yt7-hs-feR"/>
@@ -2483,7 +2546,9 @@ CA
         <image name="SwipeBack" width="60" height="120"/>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="18" height="15"/>
         <image name="cursorarrow" catalog="system" width="11" height="16"/>
+        <image name="external_link" width="16" height="16"/>
         <image name="favorite" width="32" height="32"/>
+        <image name="flag_off" width="32" height="32"/>
         <image name="gearshape" catalog="system" width="16" height="16"/>
         <image name="house" catalog="system" width="19" height="16"/>
         <image name="keyboard" catalog="system" width="19" height="13"/>
@@ -2491,7 +2556,6 @@ CA
         <image name="logo44t" width="88" height="88"/>
         <image name="moon.fill" catalog="system" width="15" height="15"/>
         <image name="network" catalog="system" width="15" height="15"/>
-        <image name="paperplane.fill" catalog="system" width="14" height="13"/>
         <image name="person" catalog="system" width="15" height="14"/>
         <image name="rotate.left" catalog="system" width="16" height="17"/>
         <image name="slider.vertical.3" catalog="system" width="18" height="17"/>

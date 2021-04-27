@@ -10,11 +10,6 @@
         <target>Item 2</target>
         <note>Class = "NSMenuItem"; title = "Item 2"; ObjectID = "A2H-X7-p5h";</note>
       </trans-unit>
-      <trans-unit id="TEu-vO-4YX.title" xml:space="preserve">
-        <source>Item 3</source>
-        <target>Item 3</target>
-        <note>Class = "NSMenuItem"; title = "Item 3"; ObjectID = "TEu-vO-4YX";</note>
-      </trans-unit>
       <trans-unit id="ZdU-96-kHD.title" xml:space="preserve">
         <source>Item 1</source>
         <target>Item 1</target>
@@ -44,6 +39,11 @@
         <source>ver</source>
         <target>ver</target>
         <note>Class = "NSTextFieldCell"; title = "ver"; ObjectID = "about-version"; Note = "🚩NO NEEDS";</note>
+      </trans-unit>
+      <trans-unit id="detail-menu-block-tag.title" xml:space="preserve">
+        <source>Block Tags</source>
+        <target>Block Tags</target>
+        <note>Class = "NSMenuItem"; title = "Block Tags"; ObjectID = "detail-menu-block-tag";</note>
       </trans-unit>
       <trans-unit id="detail-menu-download.title" xml:space="preserve">
         <source>Download Image</source>
@@ -245,6 +245,11 @@
         <target>Edit</target>
         <note>Class = "NSMenuItem"; title = "Edit"; ObjectID = "menu-edit-top";</note>
       </trans-unit>
+      <trans-unit id="menu-favorite-list-refresh.title" xml:space="preserve">
+        <source>Refresh</source>
+        <target>Refresh</target>
+        <note>Class = "NSMenuItem"; title = "Refresh"; ObjectID = "menu-favorite-list-refresh";</note>
+      </trans-unit>
       <trans-unit id="menu-find-item.title" xml:space="preserve">
         <source>Find</source>
         <target>Find</target>
@@ -305,6 +310,16 @@
         <target>Hide B9ImageBoard</target>
         <note>Class = "NSMenuItem"; title = "Hide B9ImageBoard"; ObjectID = "menu-hide";</note>
       </trans-unit>
+      <trans-unit id="menu-jump-favorite.title" xml:space="preserve">
+        <source>Favorites</source>
+        <target>Favorites</target>
+        <note>Class = "NSMenuItem"; title = "Favorites"; ObjectID = "menu-jump-favorite";</note>
+      </trans-unit>
+      <trans-unit id="menu-jump-home.title" xml:space="preserve">
+        <source>Home</source>
+        <target>Home</target>
+        <note>Class = "NSMenuItem"; title = "Home"; ObjectID = "menu-jump-home";</note>
+      </trans-unit>
       <trans-unit id="menu-jump-selection.title" xml:space="preserve">
         <source>Jump to Selection</source>
         <target>Jump to Selection</target>
@@ -331,19 +346,19 @@
         <note>Class = "NSMenuItem"; title = "Move to top"; ObjectID = "menu-move-top";</note>
       </trans-unit>
       <trans-unit id="menu-navigate-back.title" xml:space="preserve">
-        <source>Go Back</source>
-        <target>Go Back</target>
-        <note>Class = "NSMenuItem"; title = "Go Back"; ObjectID = "menu-navigate-back";</note>
+        <source>Back</source>
+        <target>Back</target>
+        <note>Class = "NSMenuItem"; title = "Back"; ObjectID = "menu-navigate-back";</note>
       </trans-unit>
       <trans-unit id="menu-navigate-top.title" xml:space="preserve">
-        <source>Navigate</source>
-        <target>Navigate</target>
-        <note>Class = "NSMenuItem"; title = "Navigate"; ObjectID = "menu-navigate-top";</note>
+        <source>Go</source>
+        <target>Go</target>
+        <note>Class = "NSMenuItem"; title = "Go"; ObjectID = "menu-navigate-top";</note>
       </trans-unit>
       <trans-unit id="menu-navigate.title" xml:space="preserve">
-        <source>Navigate</source>
-        <target>Navigate</target>
-        <note>Class = "NSMenu"; title = "Navigate"; ObjectID = "menu-navigate";</note>
+        <source>Go</source>
+        <target>Go</target>
+        <note>Class = "NSMenu"; title = "Go"; ObjectID = "menu-navigate";</note>
       </trans-unit>
       <trans-unit id="menu-operation-default.title" xml:space="preserve">
         <source>Operation</source>
@@ -444,6 +459,11 @@
         <source>Stop Speaking</source>
         <target>Stop Speaking</target>
         <note>Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "menu-stop-speaking";</note>
+      </trans-unit>
+      <trans-unit id="menu-stream-list-refresh.title" xml:space="preserve">
+        <source>Refresh</source>
+        <target>Refresh</target>
+        <note>Class = "NSMenuItem"; title = "Refresh"; ObjectID = "menu-stream-list-refresh";</note>
       </trans-unit>
       <trans-unit id="menu-substitutions-item.title" xml:space="preserve">
         <source>Substitutions</source>
@@ -735,6 +755,16 @@
         <target>Favorite</target>
         <note>Class = "NSToolbarItem"; paletteLabel = "Favorite"; ObjectID = "toolbar-favorite";</note>
       </trans-unit>
+      <trans-unit id="toolbar-flag.label" xml:space="preserve">
+        <source>Flag as Inappropriate</source>
+        <target>Flag as Inappropriate</target>
+        <note>Class = "NSToolbarItem"; label = "Flag as Inappropriate"; ObjectID = "toolbar-flag";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-flag.paletteLabel" xml:space="preserve">
+        <source>Flag as Inappropriate</source>
+        <target>Flag as Inappropriate</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "Flag as Inappropriate"; ObjectID = "toolbar-flag";</note>
+      </trans-unit>
       <trans-unit id="toolbar-navigator-cell.title" xml:space="preserve">
         <source>Title</source>
         <target>Title</target>
@@ -978,6 +1008,11 @@
         <target>Reset</target>
         <note>Reset database alert button</note>
       </trans-unit>
+      <trans-unit id="ALERT-SYSTEM-SETTING" xml:space="preserve">
+        <source>System Preferences</source>
+        <target>System Preferences</target>
+        <note>Open iCloud System Preferences</note>
+      </trans-unit>
       <trans-unit id="CACHE-CLEAN-ALL-CONFIRM-MESSAGE" xml:space="preserve">
         <source>You cannot undo this action.</source>
         <target>You cannot undo this action.</target>
@@ -1054,10 +1089,10 @@
         <note>Launch check</note>
       </trans-unit>
       <trans-unit id="LaunchError-DBTooNewMessage" xml:space="preserve">
-        <source>It seems that you have used a higher version of this app before. It is highly recommended to upgrade to the latest version.
+        <source>It seems that you have used a higher version of this app before, but downgrading is not supported. It is highly recommended to upgrade to the latest version.
 
 Howerver, if you choose continue, you may experience a crash or even data corruption, although it may work normally.</source>
-        <target>It seems that you have used a higher version of this app before. It is highly recommended to upgrade to the latest version.
+        <target>It seems that you have used a higher version of this app before, but downgrading is not supported. It is highly recommended to upgrade to the latest version.
 
 Howerver, if you choose continue, you may experience a crash or even data corruption, although it may work normally.</target>
         <note>Launch check</note>
@@ -1066,6 +1101,11 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <source>Downgraded Database File</source>
         <target>Downgraded Database File</target>
         <note>Launch check</note>
+      </trans-unit>
+      <trans-unit id="POST-FLAG-SUCCESS" xml:space="preserve">
+        <source>Thanks. I will look at it.</source>
+        <target>Thanks. I will look at it.</target>
+        <note>In HUD</note>
       </trans-unit>
       <trans-unit id="STREAM-NEW-POST" xml:space="preserve">
         <source>There are some new posts, click to view.</source>
@@ -1126,6 +1166,16 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <source>No internet connection, please check</source>
         <target>No internet connection, please check</target>
         <note>URLError</note>
+      </trans-unit>
+      <trans-unit id="iCloud-TURN-ON-MESSAGE" xml:space="preserve">
+        <source>Send anonymous flag requires you to turn on iCloud for (App().displayName).</source>
+        <target>Send anonymous flag requires you to turn on iCloud for (App().displayName).</target>
+        <note>iCloud No Account</note>
+      </trans-unit>
+      <trans-unit id="iCloud-TURN-ON-TITLE" xml:space="preserve">
+        <source>Turn On iCloud</source>
+        <target>Turn On iCloud</target>
+        <note>iCloud No Account</note>
       </trans-unit>
     </body>
   </file>
