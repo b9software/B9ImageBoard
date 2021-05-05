@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Scene/Base.lproj/Main.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
     </header>
     <body>
       <trans-unit id="A2H-X7-p5h.title" xml:space="preserve">
@@ -575,6 +575,11 @@
         <target>收藏时自动缓存高清图</target>
         <note>Class = "NSButtonCell"; title = "Auto cache large images marked as favorites"; ObjectID = "setting-auto-save-favorites";</note>
       </trans-unit>
+      <trans-unit id="setting-backup-section.title" xml:space="preserve">
+        <source>Backup &amp; Restore</source>
+        <target>备份与还原</target>
+        <note>Class = "NSTextFieldCell"; title = "Backup &amp; Restore"; ObjectID = "setting-backup-section";</note>
+      </trans-unit>
       <trans-unit id="setting-browse-section.title" xml:space="preserve">
         <source>Posts Browse</source>
         <target>列表浏览</target>
@@ -623,6 +628,21 @@
         <target>下载管理</target>
         <note>Class = "NSTextFieldCell"; title = "Download"; ObjectID = "setting-downloat-section";</note>
       </trans-unit>
+      <trans-unit id="setting-favorites-export-title.title" xml:space="preserve">
+        <source>Favorites</source>
+        <target>收藏内容</target>
+        <note>Class = "NSTextFieldCell"; title = "Favorites"; ObjectID = "setting-favorites-export-title";</note>
+      </trans-unit>
+      <trans-unit id="setting-favorites-export.title" xml:space="preserve">
+        <source>Export</source>
+        <target>导出</target>
+        <note>Class = "NSButtonCell"; title = "Export"; ObjectID = "setting-favorites-export";</note>
+      </trans-unit>
+      <trans-unit id="setting-favorites-import.title" xml:space="preserve">
+        <source>Import</source>
+        <target>导入</target>
+        <note>Class = "NSButtonCell"; title = "Import"; ObjectID = "setting-favorites-import";</note>
+      </trans-unit>
       <trans-unit id="setting-hide-post-size-fliter.placeholderString" xml:space="preserve">
         <source>Pixels size filter</source>
         <target>图片大小过滤</target>
@@ -656,7 +676,7 @@
       <trans-unit id="setting-tag-blacklist.title" xml:space="preserve">
         <source>Tag Blacklist</source>
         <target>标签黑名单</target>
-        <note>Class = "NSTextFieldCell"; title = "Tag Blacklist"; ObjectID = "setting-tag-blacklist"; Note = "🚩NO NEEDS";</note>
+        <note>Class = "NSTextFieldCell"; title = "Tag Blacklist"; ObjectID = "setting-tag-blacklist";</note>
       </trans-unit>
       <trans-unit id="tagblack-add.title" xml:space="preserve">
         <source>Add</source>
@@ -858,7 +878,7 @@
   </file>
   <file original="App/Scene/Post List/Base.lproj/RefreshFooter.xib" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
     </header>
     <body>
       <trans-unit id="9xU-QB-19N.title" xml:space="preserve">
@@ -885,7 +905,7 @@
   </file>
   <file original="App/Support/Base.lproj/Localizable.stringsdict" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
     </header>
     <body>
       <trans-unit id="/STRINGS-ImageCount:dict/NSStringLocalizedFormatKey:dict/:string" xml:space="preserve">
@@ -922,7 +942,7 @@
   </file>
   <file original="App/Support/en.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -938,7 +958,7 @@
   </file>
   <file original="App/Support/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
     </header>
     <body>
       <trans-unit id="ALERT-CANCEL" xml:space="preserve">
