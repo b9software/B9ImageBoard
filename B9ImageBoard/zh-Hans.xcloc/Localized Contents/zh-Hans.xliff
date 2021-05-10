@@ -9,6 +9,14 @@
         <source>Item 2</source>
         <note>Class = "NSMenuItem"; title = "Item 2"; ObjectID = "A2H-X7-p5h";</note>
       </trans-unit>
+      <trans-unit id="Nxx-4O-Cgz.title" xml:space="preserve">
+        <source>Next Post</source>
+        <note>Class = "NSMenuItem"; title = "Next Post"; ObjectID = "Nxx-4O-Cgz";</note>
+      </trans-unit>
+      <trans-unit id="QuD-Fe-D6K.title" xml:space="preserve">
+        <source>Previous Post</source>
+        <note>Class = "NSMenuItem"; title = "Previous Post"; ObjectID = "QuD-Fe-D6K";</note>
+      </trans-unit>
       <trans-unit id="ZdU-96-kHD.title" xml:space="preserve">
         <source>Item 1</source>
         <note>Class = "NSMenuItem"; title = "Item 1"; ObjectID = "ZdU-96-kHD";</note>
@@ -23,8 +31,8 @@
         <note>Class = "NSTextFieldCell"; title = "B9ImageBoard"; ObjectID = "about-appname"; Note = "🚩NO NEEDS";</note>
       </trans-unit>
       <trans-unit id="about-copyright.title" xml:space="preserve">
-        <source>Copyright © 2021 BB9z. All rights reserved.</source>
-        <note>Class = "NSTextFieldCell"; title = "Copyright © 2021 BB9z. All rights reserved."; ObjectID = "about-copyright"; Note = "🚩NO NEEDS";</note>
+        <source>Copyright © 2021 BB9z.</source>
+        <note>Class = "NSTextFieldCell"; title = "Copyright © 2021 BB9z."; ObjectID = "about-copyright"; Note = "🚩NO NEEDS";</note>
       </trans-unit>
       <trans-unit id="about-privacy.title" xml:space="preserve">
         <source>Privacy Policy</source>
@@ -76,6 +84,26 @@
       <trans-unit id="f6n-3Y-eaP.paletteLabel" xml:space="preserve">
         <source>Custom View</source>
         <note>Class = "NSToolbarItem"; paletteLabel = "Custom View"; ObjectID = "f6n-3Y-eaP";</note>
+      </trans-unit>
+      <trans-unit id="flag-cancel-button.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "flag-cancel-button";</note>
+      </trans-unit>
+      <trans-unit id="flag-reason.placeholderString" xml:space="preserve">
+        <source>Reason</source>
+        <target>请告知不合适的具体原因</target>
+        <note>Class = "NSTextFieldCell"; placeholderString = "Reason"; ObjectID = "flag-reason";</note>
+      </trans-unit>
+      <trans-unit id="flag-send-button.title" xml:space="preserve">
+        <source>Send</source>
+        <target>发送</target>
+        <note>Class = "NSButtonCell"; title = "Send"; ObjectID = "flag-send-button";</note>
+      </trans-unit>
+      <trans-unit id="flag-title.title" xml:space="preserve">
+        <source>Flag as Inappropriate</source>
+        <target>举报不当内容</target>
+        <note>Class = "NSTextFieldCell"; title = "Flag as Inappropriate"; ObjectID = "flag-title";</note>
       </trans-unit>
       <trans-unit id="home-new-post-button.title" xml:space="preserve">
         <source>New post notice</source>
@@ -161,6 +189,10 @@
         <source>Database Trace</source>
         <note>Class = "NSMenuItem"; title = "Database Trace"; ObjectID = "menu-dev-database-trace";</note>
       </trans-unit>
+      <trans-unit id="menu-dev-exportEditorChoice.title" xml:space="preserve">
+        <source>Export Editor Choice</source>
+        <note>Class = "NSMenuItem"; title = "Export Editor Choice"; ObjectID = "menu-dev-exportEditorChoice";</note>
+      </trans-unit>
       <trans-unit id="menu-dev-local-events-monitor.title" xml:space="preserve">
         <source>Local Events Monitor</source>
         <note>Class = "NSMenuItem"; title = "Local Events Monitor"; ObjectID = "menu-dev-local-events-monitor";</note>
@@ -182,12 +214,16 @@
         <note>Class = "NSMenuItem"; title = "No Image Load"; ObjectID = "menu-dev-no-image-load";</note>
       </trans-unit>
       <trans-unit id="menu-dev-no-launch-sync.title" xml:space="preserve">
-        <source>No Launch Sync</source>
-        <note>Class = "NSMenuItem"; title = "No Launch Sync"; ObjectID = "menu-dev-no-launch-sync";</note>
+        <source>Stream Enable</source>
+        <note>Class = "NSMenuItem"; title = "Stream Enable"; ObjectID = "menu-dev-no-launch-sync";</note>
       </trans-unit>
       <trans-unit id="menu-dev-open-database.title" xml:space="preserve">
         <source>Open Database</source>
         <note>Class = "NSMenuItem"; title = "Open Database"; ObjectID = "menu-dev-open-database";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-resetEditorChoice.title" xml:space="preserve">
+        <source>Reset Editor Choice</source>
+        <note>Class = "NSMenuItem"; title = "Reset Editor Choice"; ObjectID = "menu-dev-resetEditorChoice";</note>
       </trans-unit>
       <trans-unit id="menu-dev-support-directory.title" xml:space="preserve">
         <source>View Support Directory</source>
@@ -214,6 +250,11 @@
         <source>Edit</source>
         <target>编辑</target>
         <note>Class = "NSMenuItem"; title = "Edit"; ObjectID = "menu-edit-top";</note>
+      </trans-unit>
+      <trans-unit id="menu-editchoice-list-refresh.title" xml:space="preserve">
+        <source>Refresh</source>
+        <target>刷新</target>
+        <note>Class = "NSMenuItem"; title = "Refresh"; ObjectID = "menu-editchoice-list-refresh";</note>
       </trans-unit>
       <trans-unit id="menu-favorite-list-refresh.title" xml:space="preserve">
         <source>Refresh</source>
@@ -294,6 +335,11 @@
         <source>Jump to Selection</source>
         <target>跳到所选内容</target>
         <note>Class = "NSMenuItem"; title = "Jump to Selection"; ObjectID = "menu-jump-selection";</note>
+      </trans-unit>
+      <trans-unit id="menu-jump-stream.title" xml:space="preserve">
+        <source>Stream</source>
+        <target>图片流</target>
+        <note>Class = "NSMenuItem"; title = "Stream"; ObjectID = "menu-jump-stream";</note>
       </trans-unit>
       <trans-unit id="menu-lowercaseWord.title" xml:space="preserve">
         <source>Make Lower Case</source>
@@ -545,164 +591,15 @@
         <target>偏好设置</target>
         <note>Class = "NSButtonCell"; title = "Preferences"; ObjectID = "navigation-button-preferences";</note>
       </trans-unit>
+      <trans-unit id="navigation-button-stream.title" xml:space="preserve">
+        <source>Stream</source>
+        <target>图片流</target>
+        <note>Class = "NSButtonCell"; title = "Stream"; ObjectID = "navigation-button-stream";</note>
+      </trans-unit>
       <trans-unit id="navigator-button-favorites.title" xml:space="preserve">
         <source>Favorites</source>
         <target>我的收藏</target>
         <note>Class = "NSButtonCell"; title = "Favorites"; ObjectID = "navigator-button-favorites";</note>
-      </trans-unit>
-      <trans-unit id="setting-appearance-label.title" xml:space="preserve">
-        <source>Appearance</source>
-        <target>外观</target>
-        <note>Class = "NSTextFieldCell"; title = "Appearance"; ObjectID = "setting-appearance-label";</note>
-      </trans-unit>
-      <trans-unit id="setting-appearance-pop-dark.title" xml:space="preserve">
-        <source>Dark Mode</source>
-        <target>深色模式</target>
-        <note>Class = "NSMenuItem"; title = "Dark Mode"; ObjectID = "setting-appearance-pop-dark";</note>
-      </trans-unit>
-      <trans-unit id="setting-appearance-pop-light.title" xml:space="preserve">
-        <source>Light Mode</source>
-        <target>浅色模式</target>
-        <note>Class = "NSMenuItem"; title = "Light Mode"; ObjectID = "setting-appearance-pop-light";</note>
-      </trans-unit>
-      <trans-unit id="setting-appearance-pop-system.title" xml:space="preserve">
-        <source>System Default</source>
-        <target>跟随系统</target>
-        <note>Class = "NSMenuItem"; title = "System Default"; ObjectID = "setting-appearance-pop-system";</note>
-      </trans-unit>
-      <trans-unit id="setting-auto-save-favorites.title" xml:space="preserve">
-        <source>Auto cache large images marked as favorites</source>
-        <target>收藏时自动缓存高清图</target>
-        <note>Class = "NSButtonCell"; title = "Auto cache large images marked as favorites"; ObjectID = "setting-auto-save-favorites";</note>
-      </trans-unit>
-      <trans-unit id="setting-backup-section.title" xml:space="preserve">
-        <source>Backup &amp; Restore</source>
-        <target>备份与还原</target>
-        <note>Class = "NSTextFieldCell"; title = "Backup &amp; Restore"; ObjectID = "setting-backup-section";</note>
-      </trans-unit>
-      <trans-unit id="setting-browse-section.title" xml:space="preserve">
-        <source>Posts Browse</source>
-        <target>列表浏览</target>
-        <note>Class = "NSTextFieldCell"; title = "Posts Browse"; ObjectID = "setting-browse-section";</note>
-      </trans-unit>
-      <trans-unit id="setting-cache-clean-button.title" xml:space="preserve">
-        <source>Clean</source>
-        <target>清空</target>
-        <note>Class = "NSButtonCell"; title = "Clean"; ObjectID = "setting-cache-clean-button";</note>
-      </trans-unit>
-      <trans-unit id="setting-cache-info.title" xml:space="preserve">
-        <source>...</source>
-        <note>Class = "NSTextFieldCell"; title = "..."; ObjectID = "setting-cache-info"; Note = "🚩NO NEEDS";</note>
-      </trans-unit>
-      <trans-unit id="setting-cache-section.title" xml:space="preserve">
-        <source>Cache</source>
-        <target>缓存管理</target>
-        <note>Class = "NSTextFieldCell"; title = "Cache"; ObjectID = "setting-cache-section";</note>
-      </trans-unit>
-      <trans-unit id="setting-detail-section.title" xml:space="preserve">
-        <source>Post Detail</source>
-        <target>大图浏览</target>
-        <note>Class = "NSTextFieldCell"; title = "Post Detail"; ObjectID = "setting-detail-section";</note>
-      </trans-unit>
-      <trans-unit id="setting-display-section.title" xml:space="preserve">
-        <source>Display</source>
-        <target>显示设置</target>
-        <note>Class = "NSTextFieldCell"; title = "Display"; ObjectID = "setting-display-section";</note>
-      </trans-unit>
-      <trans-unit id="setting-download-destionation-change.title" xml:space="preserve">
-        <source>Change</source>
-        <target>选取</target>
-        <note>Class = "NSButtonCell"; title = "Change"; ObjectID = "setting-download-destionation-change";</note>
-      </trans-unit>
-      <trans-unit id="setting-download-location-detail.title" xml:space="preserve">
-        <source>...</source>
-        <note>Class = "NSTextFieldCell"; title = "..."; ObjectID = "setting-download-location-detail"; Note = "🚩NO NEEDS";</note>
-      </trans-unit>
-      <trans-unit id="setting-download-location-title.title" xml:space="preserve">
-        <source>Location</source>
-        <target>下载地址</target>
-        <note>Class = "NSTextFieldCell"; title = "Location"; ObjectID = "setting-download-location-title";</note>
-      </trans-unit>
-      <trans-unit id="setting-downloat-section.title" xml:space="preserve">
-        <source>Download</source>
-        <target>下载管理</target>
-        <note>Class = "NSTextFieldCell"; title = "Download"; ObjectID = "setting-downloat-section";</note>
-      </trans-unit>
-      <trans-unit id="setting-favorites-export-title.title" xml:space="preserve">
-        <source>Favorites</source>
-        <target>收藏内容</target>
-        <note>Class = "NSTextFieldCell"; title = "Favorites"; ObjectID = "setting-favorites-export-title";</note>
-      </trans-unit>
-      <trans-unit id="setting-favorites-export.title" xml:space="preserve">
-        <source>Export</source>
-        <target>导出</target>
-        <note>Class = "NSButtonCell"; title = "Export"; ObjectID = "setting-favorites-export";</note>
-      </trans-unit>
-      <trans-unit id="setting-favorites-import.title" xml:space="preserve">
-        <source>Import</source>
-        <target>导入</target>
-        <note>Class = "NSButtonCell"; title = "Import"; ObjectID = "setting-favorites-import";</note>
-      </trans-unit>
-      <trans-unit id="setting-hide-post-size-fliter.placeholderString" xml:space="preserve">
-        <source>Pixels size filter</source>
-        <target>图片大小过滤</target>
-        <note>Class = "NSTextFieldCell"; placeholderString = "Pixels size filter"; ObjectID = "setting-hide-post-size-fliter"; Note = "🚩Translate placeholder only";</note>
-      </trans-unit>
-      <trans-unit id="setting-hide-post-size-fliter.title" xml:space="preserve">
-        <source>Pixels size filter</source>
-        <target>图片大小过滤</target>
-        <note>Class = "NSTextFieldCell"; title = "Pixels size filter"; ObjectID = "setting-hide-post-size-fliter"; Note = "🚩Translate placeholder only";</note>
-      </trans-unit>
-      <trans-unit id="setting-pixels-fliter-tips.title" xml:space="preserve">
-        <source>Instead of filter using width and height, we choose pixels. Move the knob of above slider bar or click preview cells to change filter setting.</source>
-        <target>支持用像素尺寸过滤图片，而非宽高。移动上方的滑块或点击预览单元以调整过滤设置。</target>
-        <note>Class = "NSTextFieldCell"; title = "Instead of filter using width and height, we choose pixels. Move the knob of above slider bar or click preview cells to change filter setting."; ObjectID = "setting-pixels-fliter-tips";</note>
-      </trans-unit>
-      <trans-unit id="setting-post-viewed-fliter.title" xml:space="preserve">
-        <source>Hide viewed posts</source>
-        <target>隐藏已阅图片</target>
-        <note>Class = "NSButtonCell"; title = "Hide viewed posts"; ObjectID = "setting-post-viewed-fliter";</note>
-      </trans-unit>
-      <trans-unit id="setting-post-viewed-needs-sample-loadded.title" xml:space="preserve">
-        <source>Only mark viewed when sample fully loaded</source>
-        <target>标记已阅需大图加载完毕</target>
-        <note>Class = "NSButtonCell"; title = "Only mark viewed when sample fully loaded"; ObjectID = "setting-post-viewed-needs-sample-loadded";</note>
-      </trans-unit>
-      <trans-unit id="setting-tag-black-edit.title" xml:space="preserve">
-        <source>Edit</source>
-        <target>编辑</target>
-        <note>Class = "NSButtonCell"; title = "Edit"; ObjectID = "setting-tag-black-edit";</note>
-      </trans-unit>
-      <trans-unit id="setting-tag-blacklist.title" xml:space="preserve">
-        <source>Tag Blacklist</source>
-        <target>标签黑名单</target>
-        <note>Class = "NSTextFieldCell"; title = "Tag Blacklist"; ObjectID = "setting-tag-blacklist";</note>
-      </trans-unit>
-      <trans-unit id="tagblack-add.title" xml:space="preserve">
-        <source>Add</source>
-        <target>添加</target>
-        <note>Class = "NSButtonCell"; title = "Add"; ObjectID = "tagblack-add";</note>
-      </trans-unit>
-      <trans-unit id="tagblack-list-default-cell.title" xml:space="preserve">
-        <source>Text Cell</source>
-        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "tagblack-list-default-cell";</note>
-      </trans-unit>
-      <trans-unit id="tagblack-list-footer.title" xml:space="preserve">
-        <source>Footer</source>
-        <note>Class = "NSTextFieldCell"; title = "Footer"; ObjectID = "tagblack-list-footer"; Note = "🚩NO NEEDS";</note>
-      </trans-unit>
-      <trans-unit id="tagblack-list-section.title" xml:space="preserve">
-        <source>Section</source>
-        <note>Class = "NSTextFieldCell"; title = "Section"; ObjectID = "tagblack-list-section"; Note = "🚩NO NEEDS";</note>
-      </trans-unit>
-      <trans-unit id="tagblack-list-tag.title" xml:space="preserve">
-        <source>Tag Name</source>
-        <note>Class = "NSTextFieldCell"; title = "Tag Name"; ObjectID = "tagblack-list-tag"; Note = "🚩NO NEEDS";</note>
-      </trans-unit>
-      <trans-unit id="tagblack-new-tag-name.placeholderString" xml:space="preserve">
-        <source>New tag</source>
-        <target>新标签</target>
-        <note>Class = "NSTextFieldCell"; placeholderString = "New tag"; ObjectID = "tagblack-new-tag-name";</note>
       </trans-unit>
       <trans-unit id="toolbar-back.label" xml:space="preserve">
         <source>Back</source>
@@ -836,25 +733,20 @@
         <target>致谢</target>
         <note>Class = "NSViewController"; title = "Acknowledgements"; ObjectID = "vc-acknowledgement";</note>
       </trans-unit>
+      <trans-unit id="vc-editor-choice.title" xml:space="preserve">
+        <source>Editor Choice</source>
+        <target>编辑精选</target>
+        <note>Class = "NSViewController"; title = "Editor Choice"; ObjectID = "vc-editor-choice";</note>
+      </trans-unit>
       <trans-unit id="vc-favorite-list.title" xml:space="preserve">
         <source>Favorites</source>
         <target>我的收藏</target>
         <note>Class = "NSViewController"; title = "Favorites"; ObjectID = "vc-favorite-list";</note>
       </trans-unit>
       <trans-unit id="vc-post-list.title" xml:space="preserve">
-        <source>Posts</source>
-        <target>图片浏览</target>
-        <note>Class = "NSViewController"; title = "Posts"; ObjectID = "vc-post-list";</note>
-      </trans-unit>
-      <trans-unit id="vc-preferences.title" xml:space="preserve">
-        <source>Preferences</source>
-        <target>偏好设置</target>
-        <note>Class = "NSViewController"; title = "Preferences"; ObjectID = "vc-preferences";</note>
-      </trans-unit>
-      <trans-unit id="vc-tag-blacklist.title" xml:space="preserve">
-        <source>Tag Blacklist</source>
-        <target>标签黑名单</target>
-        <note>Class = "NSViewController"; title = "Tag Blacklist"; ObjectID = "vc-tag-blacklist";</note>
+        <source>Post Stream</source>
+        <target>图片流</target>
+        <note>Class = "NSViewController"; title = "Post Stream"; ObjectID = "vc-post-list";</note>
       </trans-unit>
       <trans-unit id="vc-welcome.title" xml:space="preserve">
         <source>Welcome</source>
@@ -900,6 +792,199 @@
         <source>No more</source>
         <target>没有更多了</target>
         <note>Class = "NSTextFieldCell"; title = "No more"; ObjectID = "wit-g5-0bl";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="App/Scene/Preference/Base.lproj/Setting.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+    </header>
+    <body>
+      <trans-unit id="setting-appearance-label.title" xml:space="preserve">
+        <source>Appearance</source>
+        <target>外观</target>
+        <note>Class = "NSTextFieldCell"; title = "Appearance"; ObjectID = "setting-appearance-label";</note>
+      </trans-unit>
+      <trans-unit id="setting-appearance-pop-dark.title" xml:space="preserve">
+        <source>Dark Mode</source>
+        <target>深色模式</target>
+        <note>Class = "NSMenuItem"; title = "Dark Mode"; ObjectID = "setting-appearance-pop-dark";</note>
+      </trans-unit>
+      <trans-unit id="setting-appearance-pop-light.title" xml:space="preserve">
+        <source>Light Mode</source>
+        <target>浅色模式</target>
+        <note>Class = "NSMenuItem"; title = "Light Mode"; ObjectID = "setting-appearance-pop-light";</note>
+      </trans-unit>
+      <trans-unit id="setting-appearance-pop-system.title" xml:space="preserve">
+        <source>System Default</source>
+        <target>跟随系统</target>
+        <note>Class = "NSMenuItem"; title = "System Default"; ObjectID = "setting-appearance-pop-system";</note>
+      </trans-unit>
+      <trans-unit id="setting-auto-save-favorites.title" xml:space="preserve">
+        <source>Auto cache large images marked as favorites</source>
+        <target>收藏时自动缓存高清图</target>
+        <note>Class = "NSButtonCell"; title = "Auto cache large images marked as favorites"; ObjectID = "setting-auto-save-favorites";</note>
+      </trans-unit>
+      <trans-unit id="setting-backup-section.title" xml:space="preserve">
+        <source>Backup &amp; Restore</source>
+        <target>备份与还原</target>
+        <note>Class = "NSTextFieldCell"; title = "Backup &amp; Restore"; ObjectID = "setting-backup-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-browse-section.title" xml:space="preserve">
+        <source>Posts Browse</source>
+        <target>列表浏览</target>
+        <note>Class = "NSTextFieldCell"; title = "Posts Browse"; ObjectID = "setting-browse-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-cache-clean-button.title" xml:space="preserve">
+        <source>Clean</source>
+        <target>清空</target>
+        <note>Class = "NSButtonCell"; title = "Clean"; ObjectID = "setting-cache-clean-button";</note>
+      </trans-unit>
+      <trans-unit id="setting-cache-info.title" xml:space="preserve">
+        <source>...</source>
+        <note>Class = "NSTextFieldCell"; title = "..."; ObjectID = "setting-cache-info"; Note = "🚩NO NEEDS";</note>
+      </trans-unit>
+      <trans-unit id="setting-cache-limit-1gb.title" xml:space="preserve">
+        <source>1GB</source>
+        <note>Class = "NSMenuItem"; title = "1GB"; ObjectID = "setting-cache-limit-1gb";</note>
+      </trans-unit>
+      <trans-unit id="setting-cache-limit-2gb.title" xml:space="preserve">
+        <source>2GB</source>
+        <note>Class = "NSMenuItem"; title = "2GB"; ObjectID = "setting-cache-limit-2gb";</note>
+      </trans-unit>
+      <trans-unit id="setting-cache-limit-500.title" xml:space="preserve">
+        <source>500MB</source>
+        <note>Class = "NSMenuItem"; title = "500MB"; ObjectID = "setting-cache-limit-500";</note>
+      </trans-unit>
+      <trans-unit id="setting-cache-limit-none.title" xml:space="preserve">
+        <source>Unlimited</source>
+        <target>不限制</target>
+        <note>Class = "NSMenuItem"; title = "Unlimited"; ObjectID = "setting-cache-limit-none";</note>
+      </trans-unit>
+      <trans-unit id="setting-cache-limit-title.title" xml:space="preserve">
+        <source>Temporarily Cache Size Limit</source>
+        <target>限制临时缓存磁盘空间</target>
+        <note>Class = "NSTextFieldCell"; title = "Temporarily Cache Size Limit"; ObjectID = "setting-cache-limit-title";</note>
+      </trans-unit>
+      <trans-unit id="setting-cache-section.title" xml:space="preserve">
+        <source>Cache</source>
+        <target>缓存管理</target>
+        <note>Class = "NSTextFieldCell"; title = "Cache"; ObjectID = "setting-cache-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-detail-section.title" xml:space="preserve">
+        <source>Post Detail</source>
+        <target>大图浏览</target>
+        <note>Class = "NSTextFieldCell"; title = "Post Detail"; ObjectID = "setting-detail-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-display-section.title" xml:space="preserve">
+        <source>Display</source>
+        <target>显示设置</target>
+        <note>Class = "NSTextFieldCell"; title = "Display"; ObjectID = "setting-display-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-download-destionation-change.title" xml:space="preserve">
+        <source>Change</source>
+        <target>选取</target>
+        <note>Class = "NSButtonCell"; title = "Change"; ObjectID = "setting-download-destionation-change";</note>
+      </trans-unit>
+      <trans-unit id="setting-download-location-detail.title" xml:space="preserve">
+        <source>...</source>
+        <note>Class = "NSTextFieldCell"; title = "..."; ObjectID = "setting-download-location-detail"; Note = "🚩NO NEEDS";</note>
+      </trans-unit>
+      <trans-unit id="setting-download-location-title.title" xml:space="preserve">
+        <source>Location</source>
+        <target>下载地址</target>
+        <note>Class = "NSTextFieldCell"; title = "Location"; ObjectID = "setting-download-location-title";</note>
+      </trans-unit>
+      <trans-unit id="setting-downloat-section.title" xml:space="preserve">
+        <source>Download</source>
+        <target>下载管理</target>
+        <note>Class = "NSTextFieldCell"; title = "Download"; ObjectID = "setting-downloat-section";</note>
+      </trans-unit>
+      <trans-unit id="setting-favorites-export-title.title" xml:space="preserve">
+        <source>Favorites</source>
+        <target>收藏内容</target>
+        <note>Class = "NSTextFieldCell"; title = "Favorites"; ObjectID = "setting-favorites-export-title";</note>
+      </trans-unit>
+      <trans-unit id="setting-favorites-export.title" xml:space="preserve">
+        <source>Export</source>
+        <target>导出</target>
+        <note>Class = "NSButtonCell"; title = "Export"; ObjectID = "setting-favorites-export";</note>
+      </trans-unit>
+      <trans-unit id="setting-favorites-import.title" xml:space="preserve">
+        <source>Import</source>
+        <target>导入</target>
+        <note>Class = "NSButtonCell"; title = "Import"; ObjectID = "setting-favorites-import";</note>
+      </trans-unit>
+      <trans-unit id="setting-hide-post-size-fliter.placeholderString" xml:space="preserve">
+        <source>Pixels size filter</source>
+        <target>图片大小过滤</target>
+        <note>Class = "NSTextFieldCell"; placeholderString = "Pixels size filter"; ObjectID = "setting-hide-post-size-fliter"; Note = "🚩Translate placeholder only";</note>
+      </trans-unit>
+      <trans-unit id="setting-hide-post-size-fliter.title" xml:space="preserve">
+        <source>Pixels size filter</source>
+        <target>图片大小过滤</target>
+        <note>Class = "NSTextFieldCell"; title = "Pixels size filter"; ObjectID = "setting-hide-post-size-fliter"; Note = "🚩Translate placeholder only";</note>
+      </trans-unit>
+      <trans-unit id="setting-pixels-fliter-tips.title" xml:space="preserve">
+        <source>Instead of filter using width and height, we choose pixels. Move the knob of above slider bar or click preview cells to change filter setting.</source>
+        <target>支持用像素尺寸过滤图片，而非宽高。移动上方的滑块或点击预览单元以调整过滤设置。</target>
+        <note>Class = "NSTextFieldCell"; title = "Instead of filter using width and height, we choose pixels. Move the knob of above slider bar or click preview cells to change filter setting."; ObjectID = "setting-pixels-fliter-tips";</note>
+      </trans-unit>
+      <trans-unit id="setting-post-viewed-fliter.title" xml:space="preserve">
+        <source>Hide viewed posts</source>
+        <target>隐藏已阅图片</target>
+        <note>Class = "NSButtonCell"; title = "Hide viewed posts"; ObjectID = "setting-post-viewed-fliter";</note>
+      </trans-unit>
+      <trans-unit id="setting-post-viewed-needs-sample-loadded.title" xml:space="preserve">
+        <source>Only mark viewed when sample fully loaded</source>
+        <target>标记已阅需大图加载完毕</target>
+        <note>Class = "NSButtonCell"; title = "Only mark viewed when sample fully loaded"; ObjectID = "setting-post-viewed-needs-sample-loadded";</note>
+      </trans-unit>
+      <trans-unit id="setting-tag-black-edit.title" xml:space="preserve">
+        <source>Edit</source>
+        <target>编辑</target>
+        <note>Class = "NSButtonCell"; title = "Edit"; ObjectID = "setting-tag-black-edit";</note>
+      </trans-unit>
+      <trans-unit id="setting-tag-blacklist.title" xml:space="preserve">
+        <source>Tag Blacklist</source>
+        <target>标签黑名单</target>
+        <note>Class = "NSTextFieldCell"; title = "Tag Blacklist"; ObjectID = "setting-tag-blacklist";</note>
+      </trans-unit>
+      <trans-unit id="tagblack-add.title" xml:space="preserve">
+        <source>Add</source>
+        <target>添加</target>
+        <note>Class = "NSButtonCell"; title = "Add"; ObjectID = "tagblack-add";</note>
+      </trans-unit>
+      <trans-unit id="tagblack-list-default-cell.title" xml:space="preserve">
+        <source>Text Cell</source>
+        <note>Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "tagblack-list-default-cell";</note>
+      </trans-unit>
+      <trans-unit id="tagblack-list-footer.title" xml:space="preserve">
+        <source>Footer</source>
+        <note>Class = "NSTextFieldCell"; title = "Footer"; ObjectID = "tagblack-list-footer"; Note = "🚩NO NEEDS";</note>
+      </trans-unit>
+      <trans-unit id="tagblack-list-section.title" xml:space="preserve">
+        <source>Section</source>
+        <note>Class = "NSTextFieldCell"; title = "Section"; ObjectID = "tagblack-list-section"; Note = "🚩NO NEEDS";</note>
+      </trans-unit>
+      <trans-unit id="tagblack-list-tag.title" xml:space="preserve">
+        <source>Tag Name</source>
+        <note>Class = "NSTextFieldCell"; title = "Tag Name"; ObjectID = "tagblack-list-tag"; Note = "🚩NO NEEDS";</note>
+      </trans-unit>
+      <trans-unit id="tagblack-new-tag-name.placeholderString" xml:space="preserve">
+        <source>New tag</source>
+        <target>新标签</target>
+        <note>Class = "NSTextFieldCell"; placeholderString = "New tag"; ObjectID = "tagblack-new-tag-name";</note>
+      </trans-unit>
+      <trans-unit id="vc-preferences.title" xml:space="preserve">
+        <source>Preferences</source>
+        <target>偏好设置</target>
+        <note>Class = "NSViewController"; title = "Preferences"; ObjectID = "vc-preferences";</note>
+      </trans-unit>
+      <trans-unit id="vc-tag-blacklist.title" xml:space="preserve">
+        <source>Tag Blacklist</source>
+        <target>标签黑名单</target>
+        <note>Class = "NSViewController"; title = "Tag Blacklist"; ObjectID = "vc-tag-blacklist";</note>
       </trans-unit>
     </body>
   </file>
@@ -1079,6 +1164,11 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <source>There are some new posts, click to view.</source>
         <target>有新图片，点击查看</target>
         <note>In Home</note>
+      </trans-unit>
+      <trans-unit id="STREAM-TEMPORARILY-DISABLE" xml:space="preserve">
+        <source>Image Stream is temporarily unavailable, as there are too many inappropriate contents. I am looking for a better solution.</source>
+        <target>图片流暂不可用，有太多不适宜内容，我正在寻找更好的方案</target>
+        <note>In Stream List</note>
       </trans-unit>
       <trans-unit id="STRINGS-ImageCount" xml:space="preserve">
         <source>STRINGS-ImageCount</source>
