@@ -6,11 +6,6 @@ BB9z built the B9ImageBoard app as a Freemium app. This SERVICE is provided by B
 
 This SERVICE does not collect any information. Yes, I collect nothing. Nothing will share to third-party services.
 
-However, I must remind you that this SERVICE needs to call API and download content from the designated site to work properly. You may checkout:
-
-* [Konachan - Terms of Service](https://konachan.com/static/terms_of_service)
-* [yande.re - Terms of Service](https://yande.re/static/terms_of_service)
-
 ## Links to Other Sites
 
 This SERVICE may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.

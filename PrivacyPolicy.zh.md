@@ -6,11 +6,6 @@ B9ImageBoard 应用由 BB9z 提供，旨在按原样使用。如果您选择使�
 
 本服务不收集任何信息，也不会同第三方服务共享任何您的信息。
 
-但需注意，因为本服务需要调用指定网站的 API 并下载内容才能正常工作，请查阅：
-
-* [Konachan - Terms of Service](https://konachan.com/static/terms_of_service)
-* [yande.re - Terms of Service](https://yande.re/static/terms_of_service)
-
 ## 链接到其他网站
 
 本服务可能包含指向其他站点的链接。点击第三方链接时，您将访问该网站。请注意，这些外部网站不是由我运营的。因此，我强烈建议您阅读这些网站的隐私政策。我无法控制任何第三方站点或服务的内容，隐私权政策或行为，也不承担任何责任。
