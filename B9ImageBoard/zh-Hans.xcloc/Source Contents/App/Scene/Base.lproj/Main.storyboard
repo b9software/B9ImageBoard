@@ -1604,10 +1604,10 @@ CA
                         <outlet property="infoContainer" destination="YYE-Pj-7sR" id="7pI-iY-b2a"/>
                         <outlet property="infoLabel" destination="Z5D-IH-7On" id="DUU-lB-BbZ"/>
                         <outlet property="nextItemIndicator" destination="bWI-BV-db5" id="CMa-Th-WM0"/>
-                        <outlet property="nextMenuItem" destination="Nxx-4O-Cgz" id="Sdm-4O-nZa"/>
+                        <outlet property="nextMenuItem" destination="menu-detail-next" id="Sdm-4O-nZa"/>
                         <outlet property="nextPreviewView" destination="uZT-gG-xgm" id="Oxz-eq-SPw"/>
                         <outlet property="prevItemIndicator" destination="xNq-OX-2vi" id="qzK-dd-1Xe"/>
-                        <outlet property="prevMenuItem" destination="QuD-Fe-D6K" id="Drq-IY-4XO"/>
+                        <outlet property="prevMenuItem" destination="menu-detail-prev" id="Drq-IY-4XO"/>
                         <outlet property="prevPreviewView" destination="zaO-zg-D9v" id="5XJ-DB-dnp"/>
                         <outlet property="rotateToolbarItem" destination="toolbar-rotate" id="t2z-p6-h38"/>
                         <outlet property="scrollView" destination="Moo-SQ-TpC" id="UP8-9M-N9I"/>
@@ -1707,13 +1707,13 @@ CA
                 </toolbar>
                 <menu title="Operation" autoenablesItems="NO" id="detail-menu-operation">
                     <items>
-                        <menuItem title="Previous Post" keyEquivalent="w" id="QuD-Fe-D6K">
+                        <menuItem title="Previous Post" keyEquivalent="w" id="menu-detail-prev">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="onPrevMenu:" target="vc-post-detail" id="Hhb-wm-7Qz"/>
                             </connections>
                         </menuItem>
-                        <menuItem title="Next Post" keyEquivalent="x" id="Nxx-4O-Cgz">
+                        <menuItem title="Next Post" keyEquivalent="x" id="menu-detail-next">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <action selector="onNextMenu:" target="vc-post-detail" id="b9J-fg-Ns6"/>

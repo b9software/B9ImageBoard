@@ -9,14 +9,6 @@
         <source>Item 2</source>
         <note>Class = "NSMenuItem"; title = "Item 2"; ObjectID = "A2H-X7-p5h";</note>
       </trans-unit>
-      <trans-unit id="Nxx-4O-Cgz.title" xml:space="preserve">
-        <source>Next Post</source>
-        <note>Class = "NSMenuItem"; title = "Next Post"; ObjectID = "Nxx-4O-Cgz";</note>
-      </trans-unit>
-      <trans-unit id="QuD-Fe-D6K.title" xml:space="preserve">
-        <source>Previous Post</source>
-        <note>Class = "NSMenuItem"; title = "Previous Post"; ObjectID = "QuD-Fe-D6K";</note>
-      </trans-unit>
       <trans-unit id="ZdU-96-kHD.title" xml:space="preserve">
         <source>Item 1</source>
         <note>Class = "NSMenuItem"; title = "Item 1"; ObjectID = "ZdU-96-kHD";</note>
@@ -168,6 +160,16 @@
         <source>Delete</source>
         <target>删除</target>
         <note>Class = "NSMenuItem"; title = "Delete"; ObjectID = "menu-delete";</note>
+      </trans-unit>
+      <trans-unit id="menu-detail-next.title" xml:space="preserve">
+        <source>Next Post</source>
+        <target>下一图</target>
+        <note>Class = "NSMenuItem"; title = "Next Post"; ObjectID = "menu-detail-next";</note>
+      </trans-unit>
+      <trans-unit id="menu-detail-prev.title" xml:space="preserve">
+        <source>Previous Post</source>
+        <target>上一图</target>
+        <note>Class = "NSMenuItem"; title = "Previous Post"; ObjectID = "menu-detail-prev";</note>
       </trans-unit>
       <trans-unit id="menu-dev-cache-directory.title" xml:space="preserve">
         <source>View Cache Directory</source>
