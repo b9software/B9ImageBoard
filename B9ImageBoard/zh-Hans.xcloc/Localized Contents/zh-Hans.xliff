@@ -215,10 +215,6 @@
         <source>No Image Load</source>
         <note>Class = "NSMenuItem"; title = "No Image Load"; ObjectID = "menu-dev-no-image-load";</note>
       </trans-unit>
-      <trans-unit id="menu-dev-no-launch-sync.title" xml:space="preserve">
-        <source>Stream Enable</source>
-        <note>Class = "NSMenuItem"; title = "Stream Enable"; ObjectID = "menu-dev-no-launch-sync";</note>
-      </trans-unit>
       <trans-unit id="menu-dev-open-database.title" xml:space="preserve">
         <source>Open Database</source>
         <note>Class = "NSMenuItem"; title = "Open Database"; ObjectID = "menu-dev-open-database";</note>
@@ -234,6 +230,10 @@
       <trans-unit id="menu-dev-triggerDebugUI.title" xml:space="preserve">
         <source>Debug UI</source>
         <note>Class = "NSMenuItem"; title = "Debug UI"; ObjectID = "menu-dev-triggerDebugUI";</note>
+      </trans-unit>
+      <trans-unit id="menu-dev-triggerNoQureyFilter.title" xml:space="preserve">
+        <source>No Qurey Filter</source>
+        <note>Class = "NSMenuItem"; title = "No Qurey Filter"; ObjectID = "menu-dev-triggerNoQureyFilter";</note>
       </trans-unit>
       <trans-unit id="menu-developer-top.title" xml:space="preserve">
         <source>Developer</source>
@@ -483,6 +483,21 @@
         <target>刷新</target>
         <note>Class = "NSMenuItem"; title = "Refresh"; ObjectID = "menu-stream-list-refresh";</note>
       </trans-unit>
+      <trans-unit id="menu-stream-no-server.title" xml:space="preserve">
+        <source>No server yet</source>
+        <target>暂无服务器</target>
+        <note>Class = "NSMenuItem"; title = "No server yet"; ObjectID = "menu-stream-no-server";</note>
+      </trans-unit>
+      <trans-unit id="menu-stream-server-switch-item.title" xml:space="preserve">
+        <source>Swiftch Server</source>
+        <target>服务器切换</target>
+        <note>Class = "NSMenuItem"; title = "Swiftch Server"; ObjectID = "menu-stream-server-switch-item";</note>
+      </trans-unit>
+      <trans-unit id="menu-stream-server-switch.title" xml:space="preserve">
+        <source>Swiftch Server</source>
+        <target>服务器切换</target>
+        <note>Class = "NSMenu"; title = "Swiftch Server"; ObjectID = "menu-stream-server-switch";</note>
+      </trans-unit>
       <trans-unit id="menu-substitutions-item.title" xml:space="preserve">
         <source>Substitutions</source>
         <target>替换</target>
@@ -602,6 +617,16 @@
         <source>Favorites</source>
         <target>我的收藏</target>
         <note>Class = "NSButtonCell"; title = "Favorites"; ObjectID = "navigator-button-favorites";</note>
+      </trans-unit>
+      <trans-unit id="stream-no-server-button.title" xml:space="preserve">
+        <source>Config Servers</source>
+        <target>去配置</target>
+        <note>Class = "NSButtonCell"; title = "Config Servers"; ObjectID = "stream-no-server-button";</note>
+      </trans-unit>
+      <trans-unit id="stream-no-server-state.title" xml:space="preserve">
+        <source>Add any server to enable Post Stream </source>
+        <target>添加服务器以启用图片流</target>
+        <note>Class = "NSTextFieldCell"; title = "Add any server to enable Post Stream "; ObjectID = "stream-no-server-state";</note>
       </trans-unit>
       <trans-unit id="toolbar-back.label" xml:space="preserve">
         <source>Back</source>
@@ -740,6 +765,30 @@
         <target>编辑精选</target>
         <note>Class = "NSViewController"; title = "Editor Choice"; ObjectID = "vc-editor-choice";</note>
       </trans-unit>
+      <trans-unit id="vc-external-link-caution-cancel.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "vc-external-link-caution-cancel";</note>
+      </trans-unit>
+      <trans-unit id="vc-external-link-caution-continue.title" xml:space="preserve">
+        <source>Continue</source>
+        <target>仍然访问</target>
+        <note>Class = "NSButtonCell"; title = "Continue"; ObjectID = "vc-external-link-caution-continue";</note>
+      </trans-unit>
+      <trans-unit id="vc-external-link-caution-detail.title" xml:space="preserve">
+        <source>I would like to pause for a moment out of an abundance of caution. It may contain unknown security risks. I cannot confirm whether the webpage is safe or not.</source>
+        <target>本次暂停是为提醒你谨慎，我无法确认该网页是否安全，它可能包含未知的安全隐患。</target>
+        <note>Class = "NSTextFieldCell"; title = "I would like to pause for a moment out of an abundance of caution. It may contain unknown security risks. I cannot confirm whether the webpage is safe or not."; ObjectID = "vc-external-link-caution-detail";</note>
+      </trans-unit>
+      <trans-unit id="vc-external-link-caution-link.title" xml:space="preserve">
+        <source>link</source>
+        <note>Class = "NSTextFieldCell"; title = "link"; ObjectID = "vc-external-link-caution-link";</note>
+      </trans-unit>
+      <trans-unit id="vc-external-link-caution-title.title" xml:space="preserve">
+        <source>You are about to visit an external link</source>
+        <target>你将要访问外部链接</target>
+        <note>Class = "NSTextFieldCell"; title = "You are about to visit an external link"; ObjectID = "vc-external-link-caution-title";</note>
+      </trans-unit>
       <trans-unit id="vc-favorite-list.title" xml:space="preserve">
         <source>Favorites</source>
         <target>我的收藏</target>
@@ -802,6 +851,59 @@
       <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
     </header>
     <body>
+      <trans-unit id="menu-new-server.title" xml:space="preserve">
+        <source>New Server</source>
+        <target>新增服务器</target>
+        <note>Class = "NSMenuItem"; title = "New Server"; ObjectID = "menu-new-server";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-account-field.placeholderString" xml:space="preserve">
+        <source>Optional</source>
+        <target>可选</target>
+        <note>Class = "NSTextFieldCell"; placeholderString = "Optional"; ObjectID = "server-edit-account-field";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-account-label.title" xml:space="preserve">
+        <source>Account Name</source>
+        <target>用户名</target>
+        <note>Class = "NSTextFieldCell"; title = "Account Name"; ObjectID = "server-edit-account-label";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-add.title" xml:space="preserve">
+        <source>Add</source>
+        <target>添加</target>
+        <note>Class = "NSButtonCell"; title = "Add"; ObjectID = "server-edit-add";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-base-field.placeholderString" xml:space="preserve">
+        <source>https://example.com</source>
+        <note>Class = "NSTextFieldCell"; placeholderString = "https://example.com"; ObjectID = "server-edit-base-field";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-base-label.title" xml:space="preserve">
+        <source>Server</source>
+        <target>服务器</target>
+        <note>Class = "NSTextFieldCell"; title = "Server"; ObjectID = "server-edit-base-label";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-cancel.title" xml:space="preserve">
+        <source>Cancel</source>
+        <target>取消</target>
+        <note>Class = "NSButtonCell"; title = "Cancel"; ObjectID = "server-edit-cancel";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-name-label.title" xml:space="preserve">
+        <source>Name</source>
+        <target>名称</target>
+        <note>Class = "NSTextFieldCell"; title = "Name"; ObjectID = "server-edit-name-label";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-passhash-label.title" xml:space="preserve">
+        <source>Password Hash</source>
+        <target>哈希后的密码</target>
+        <note>Class = "NSTextFieldCell"; title = "Password Hash"; ObjectID = "server-edit-passhash-label";</note>
+      </trans-unit>
+      <trans-unit id="server-edit-verifying.title" xml:space="preserve">
+        <source>Verifying...</source>
+        <target>验证中...</target>
+        <note>Class = "NSTextFieldCell"; title = "Verifying..."; ObjectID = "server-edit-verifying";</note>
+      </trans-unit>
+      <trans-unit id="server-list-state.title" xml:space="preserve">
+        <source>...</source>
+        <note>Class = "NSTextFieldCell"; title = "..."; ObjectID = "server-list-state"; Note = "🚩NO NEEDS";</note>
+      </trans-unit>
       <trans-unit id="setting-appearance-label.title" xml:space="preserve">
         <source>Appearance</source>
         <target>外观</target>
@@ -942,15 +1044,25 @@
         <target>标记已阅需大图加载完毕</target>
         <note>Class = "NSButtonCell"; title = "Only mark viewed when sample fully loaded"; ObjectID = "setting-post-viewed-needs-sample-loadded";</note>
       </trans-unit>
+      <trans-unit id="setting-server-config.title" xml:space="preserve">
+        <source>Config</source>
+        <target>配置</target>
+        <note>Class = "NSButtonCell"; title = "Config"; ObjectID = "setting-server-config";</note>
+      </trans-unit>
+      <trans-unit id="setting-server-title.title" xml:space="preserve">
+        <source>Servers</source>
+        <target>服务器</target>
+        <note>Class = "NSTextFieldCell"; title = "Servers"; ObjectID = "setting-server-title";</note>
+      </trans-unit>
       <trans-unit id="setting-tag-black-edit.title" xml:space="preserve">
         <source>Edit</source>
         <target>编辑</target>
         <note>Class = "NSButtonCell"; title = "Edit"; ObjectID = "setting-tag-black-edit";</note>
       </trans-unit>
       <trans-unit id="setting-tag-blacklist.title" xml:space="preserve">
-        <source>Tag Blacklist</source>
+        <source>Tag Block</source>
         <target>标签黑名单</target>
-        <note>Class = "NSTextFieldCell"; title = "Tag Blacklist"; ObjectID = "setting-tag-blacklist";</note>
+        <note>Class = "NSTextFieldCell"; title = "Tag Block"; ObjectID = "setting-tag-blacklist";</note>
       </trans-unit>
       <trans-unit id="tagblack-add.title" xml:space="preserve">
         <source>Add</source>
@@ -978,15 +1090,35 @@
         <target>新标签</target>
         <note>Class = "NSTextFieldCell"; placeholderString = "New tag"; ObjectID = "tagblack-new-tag-name";</note>
       </trans-unit>
+      <trans-unit id="toolbar-server-new-button.title" xml:space="preserve">
+        <source>New</source>
+        <target>新增</target>
+        <note>Class = "NSButtonCell"; title = "New"; ObjectID = "toolbar-server-new-button";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-server-new.label" xml:space="preserve">
+        <source>New Server</source>
+        <target>新增服务器</target>
+        <note>Class = "NSToolbarItem"; label = "New Server"; ObjectID = "toolbar-server-new";</note>
+      </trans-unit>
+      <trans-unit id="toolbar-server-new.paletteLabel" xml:space="preserve">
+        <source>New Server</source>
+        <target>新增服务器</target>
+        <note>Class = "NSToolbarItem"; paletteLabel = "New Server"; ObjectID = "toolbar-server-new";</note>
+      </trans-unit>
       <trans-unit id="vc-preferences.title" xml:space="preserve">
         <source>Preferences</source>
         <target>偏好设置</target>
         <note>Class = "NSViewController"; title = "Preferences"; ObjectID = "vc-preferences";</note>
       </trans-unit>
+      <trans-unit id="vc-server-list.title" xml:space="preserve">
+        <source>Servers</source>
+        <target>服务器</target>
+        <note>Class = "NSViewController"; title = "Servers"; ObjectID = "vc-server-list";</note>
+      </trans-unit>
       <trans-unit id="vc-tag-blacklist.title" xml:space="preserve">
-        <source>Tag Blacklist</source>
+        <source>Tag Block</source>
         <target>标签黑名单</target>
-        <note>Class = "NSViewController"; title = "Tag Blacklist"; ObjectID = "vc-tag-blacklist";</note>
+        <note>Class = "NSViewController"; title = "Tag Block"; ObjectID = "vc-tag-blacklist";</note>
       </trans-unit>
     </body>
   </file>
@@ -1167,11 +1299,6 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <target>有新图片，点击查看</target>
         <note>In Home</note>
       </trans-unit>
-      <trans-unit id="STREAM-TEMPORARILY-DISABLE" xml:space="preserve">
-        <source>Image Stream is temporarily unavailable, as there are too many inappropriate contents. I am looking for a better solution.</source>
-        <target>图片流暂不可用，有太多不适宜内容，我正在寻找更好的方案</target>
-        <note>In Stream List</note>
-      </trans-unit>
       <trans-unit id="STRINGS-ImageCount" xml:space="preserve">
         <source>STRINGS-ImageCount</source>
         <note>String Dict</note>
@@ -1225,6 +1352,11 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <target>没有联网，请检查网络连接</target>
         <note>URLError</note>
       </trans-unit>
+      <trans-unit id="action-button-save" xml:space="preserve">
+        <source>Save</source>
+        <target>保存</target>
+        <note>In Server Edit</note>
+      </trans-unit>
       <trans-unit id="iCloud-TURN-ON-MESSAGE" xml:space="preserve">
         <source>Send anonymous flag requires you to turn on iCloud for (App().displayName).</source>
         <target>发送匿名举报需要你允许 B9ImageBoard 使用 iCloud。</target>
@@ -1234,6 +1366,46 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <source>Turn On iCloud</source>
         <target>打开 iCloud</target>
         <note>iCloud No Account</note>
+      </trans-unit>
+      <trans-unit id="link-guide" xml:space="preserve">
+        <source>https://github.com/b9software/B9ImageBoard/discussions/1</source>
+        <target>https://github.com/b9software/B9ImageBoard/discussions/5</target>
+        <note>Link</note>
+      </trans-unit>
+      <trans-unit id="link-guide-server" xml:space="preserve">
+        <source>https://github.com/b9software/B9ImageBoard/discussions/1#server</source>
+        <target>https://github.com/b9software/B9ImageBoard/discussions/5#server</target>
+        <note>Link</note>
+      </trans-unit>
+      <trans-unit id="link-privacy" xml:space="preserve">
+        <source>https://github.com/b9software/B9ImageBoard/blob/main/PrivacyPolicy.md</source>
+        <target>https://github.com/b9software/B9ImageBoard/blob/main/PrivacyPolicy.zh.md</target>
+        <note>Link</note>
+      </trans-unit>
+      <trans-unit id="server-edit-base-exists" xml:space="preserve">
+        <source>This Server already exists</source>
+        <target>服务器已存在</target>
+        <note>In Server Edit</note>
+      </trans-unit>
+      <trans-unit id="server-edit-base-invalid-title" xml:space="preserve">
+        <source>Invaild Server</source>
+        <target>无效的服务器</target>
+        <note>In Server Edit</note>
+      </trans-unit>
+      <trans-unit id="server-edit-base-not-https" xml:space="preserve">
+        <source>Only HTTPS server is supported.</source>
+        <target>服务器地址必须是 HTTPS</target>
+        <note>In Server Edit</note>
+      </trans-unit>
+      <trans-unit id="server-edit-base-not-url" xml:space="preserve">
+        <source>Input is not a URL.</source>
+        <target>输入不是合法的地址</target>
+        <note>In Server Edit</note>
+      </trans-unit>
+      <trans-unit id="server-list-empty" xml:space="preserve">
+        <source>No server yet</source>
+        <target>暂无服务器</target>
+        <note>In Server List</note>
       </trans-unit>
     </body>
   </file>
