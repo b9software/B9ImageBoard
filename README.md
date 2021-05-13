@@ -2,7 +2,7 @@
 
 ## About
 
-![Banner](https://repository-images.githubusercontent.com/352020421/80326d00-ade0-11eb-85ad-50989d675959)
+![Banner](https://repository-images.githubusercontent.com/352020421/c0a33980-b198-11eb-8322-a8429f943c7f)
 
 B9ImageBoard is a macOS only Moebooru client. I will do my best to make it efficient and elegant.
 
