@@ -38,7 +38,9 @@ B9ImageBoard 是一个 Moebooru 浏览器，我将尽我所能使之高效、优
 
 ## Download
 
-The latest version is available in the app store. (Waiting Review, temporarily unavailable)
+The latest version is available on the Mac App Store.
+
+[![Download on the Mac App Store](Assets/app_store_mac_download.svg)](https://apps.apple.com/cn/app/b9imageboard/id1560766755)
 
 Order versions can be downloaded from the [Releases](https://github.com/b9software/B9ImageBoard/releases) page.
 
