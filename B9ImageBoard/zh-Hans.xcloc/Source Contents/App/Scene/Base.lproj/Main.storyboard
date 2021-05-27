@@ -312,7 +312,7 @@ CA
                                                 <action selector="moveToBeginningOfDocument:" target="Ady-hI-5gd" id="T2V-ny-EUB"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Home" keyEquivalent="1" id="menu-jump-home">
+                                        <menuItem title="Samples" keyEquivalent="1" id="menu-jump-sample">
                                             <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
                                             <connections>
                                                 <action selector="jumpToHome:" target="Ady-hI-5gd" id="NIZ-nb-Ejp"/>
@@ -455,16 +455,22 @@ CA
                                                 <action selector="openDatabase:" target="XrL-lA-GCD" id="s9a-Ej-ZBU"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Export Editor Choice" id="menu-dev-exportEditorChoice">
+                                        <menuItem title="Export Samples" id="menu-dev-exportEditorChoice">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="exportEditorChoice:" target="XrL-lA-GCD" id="x7N-LY-BLY"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Reset Editor Choice" id="menu-dev-resetEditorChoice">
+                                        <menuItem title="Reset Samples" id="menu-dev-resetEditorChoice">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="resetEditorChoice:" target="XrL-lA-GCD" id="dJs-eA-H5t"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Reset Tutorials" id="menu-dev-resetTutorial">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="resetTutorial:" target="XrL-lA-GCD" id="Gxv-wE-fwA"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -475,9 +481,8 @@ CA
                                 <menu key="submenu" title="Help" systemMenu="help" id="menu-help">
                                     <items>
                                         <menuItem title="User Guide" keyEquivalent="?" id="menu-user-guide">
-                                            <imageReference key="image" image="external_link" symbolScale="small"/>
                                             <connections>
-                                                <action selector="openUserGuide:" target="ibid-application" id="Y59-9q-BTR"/>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="iUE-bH-7TJ"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -617,9 +622,14 @@ CA
                         <rect key="frame" x="0.0" y="0.0" width="970" height="660"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <customView id="XSg-MZ-9F0">
+                            <customView id="XSg-MZ-9F0" customClass="BackgroundView" customModule="B9ImageBoard" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="970" height="660"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                        <color key="value" name="Background"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </customView>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="bYq-7T-Jx3" customClass="SwipeIndicator" customModule="B9ImageBoard" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="270" width="60" height="120"/>
@@ -865,6 +875,9 @@ CA
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <attributedString key="userComments">
+                                    <fragment content="🚩NO NEEDS"/>
+                                </attributedString>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ngD-Ux-g5z">
                                 <rect key="frame" x="58" y="147" width="324" height="64"/>
@@ -949,7 +962,7 @@ DQ
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="200" id="5P4-bC-tR0"/>
                                                     <constraint firstAttribute="height" constant="40" id="uLz-cD-2wd"/>
                                                 </constraints>
-                                                <buttonCell key="cell" type="square" title="Home" bezelStyle="shadowlessSquare" image="house" catalog="system" imagePosition="leading" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="navigation-button-home" customClass="FlatButtonCell" customModule="B9ImageBoard" customModuleProvider="target">
+                                                <buttonCell key="cell" type="square" title="Samples" bezelStyle="shadowlessSquare" image="archivebox" catalog="system" imagePosition="leading" alignment="center" lineBreakMode="truncatingTail" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="navigation-button-sample" customClass="FlatButtonCell" customModule="B9ImageBoard" customModuleProvider="target">
                                                     <behavior key="behavior" lightByContents="YES"/>
                                                     <font key="font" textStyle="body" name=".SFNS-Regular"/>
                                                     <userDefinedRuntimeAttributes>
@@ -1211,6 +1224,71 @@ DQ
             </objects>
             <point key="canvasLocation" x="810" y="-590"/>
         </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="Cd2-C1-q5x">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" id="l9k-tR-n00" customClass="TutorialViewController" customModule="B9ImageBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="u2p-Mq-d5S">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ILN-OE-d6O">
+                                <rect key="frame" x="106" y="11" width="89" height="99"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BME-am-itC">
+                                        <rect key="frame" x="14" y="14" width="61" height="40"/>
+                                        <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="tutorial-next">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="onNext:" target="l9k-tR-n00" id="JlG-CI-uIF"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="g8C-Os-fLb">
+                                        <rect key="frame" x="18" y="63" width="53" height="16"/>
+                                        <textFieldCell key="cell" controlSize="large" selectable="YES" title="..." id="tutorial-text">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                        <attributedString key="userComments">
+                                            <fragment content="🚩NO NEEDS"/>
+                                        </attributedString>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="400" id="7ck-T0-TzP"/>
+                                    <constraint firstItem="BME-am-itC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ILN-OE-d6O" secondAttribute="leading" constant="20" id="9b6-Wh-8tr"/>
+                                    <constraint firstAttribute="bottom" secondItem="BME-am-itC" secondAttribute="bottom" constant="20" id="PI3-13-lhP"/>
+                                    <constraint firstItem="BME-am-itC" firstAttribute="top" secondItem="g8C-Os-fLb" secondAttribute="bottom" constant="15" id="cpi-Lg-h2w"/>
+                                    <constraint firstAttribute="trailing" secondItem="BME-am-itC" secondAttribute="trailing" constant="20" id="k52-kV-ae8"/>
+                                    <constraint firstItem="g8C-Os-fLb" firstAttribute="leading" secondItem="ILN-OE-d6O" secondAttribute="leading" constant="20" id="qwx-yb-y54"/>
+                                    <constraint firstAttribute="trailing" secondItem="g8C-Os-fLb" secondAttribute="trailing" constant="20" id="tw5-Pd-dcv"/>
+                                    <constraint firstItem="g8C-Os-fLb" firstAttribute="top" secondItem="ILN-OE-d6O" secondAttribute="top" constant="20" id="yTN-Cv-ish"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ILN-OE-d6O" firstAttribute="centerX" secondItem="u2p-Mq-d5S" secondAttribute="centerX" id="8Yd-x4-FxK"/>
+                            <constraint firstItem="ILN-OE-d6O" firstAttribute="centerY" secondItem="u2p-Mq-d5S" secondAttribute="centerY" id="HsP-dV-Yok"/>
+                            <constraint firstAttribute="bottom" secondItem="ILN-OE-d6O" secondAttribute="bottom" priority="1" id="htc-QT-Y6q"/>
+                            <constraint firstItem="ILN-OE-d6O" firstAttribute="leading" secondItem="u2p-Mq-d5S" secondAttribute="leading" priority="1" id="qf9-kR-ICz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="ILN-OE-d6O" id="CeM-YC-F6n"/>
+                        <outlet property="nextButton" destination="BME-am-itC" id="KfX-kH-sQx"/>
+                        <outlet property="textLabel" destination="g8C-Os-fLb" id="3Za-am-JrN"/>
+                    </connections>
+                </viewController>
+                <customObject id="vPl-fm-INC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208" y="-590"/>
+        </scene>
         <!--Favorites-->
         <scene sceneID="pBs-YB-PFq">
             <objects>
@@ -1319,7 +1397,7 @@ DQ
                                         <rect key="frame" x="-2" y="35" width="236" height="16"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Add any server to enable Post Stream " id="stream-no-server-state">
                                             <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
@@ -1453,6 +1531,7 @@ DQ
                         <outlet property="newPostCountButton" destination="e7g-e3-o90" id="j4V-1u-ruM"/>
                         <outlet property="newPostCountContainer" destination="fzb-Sr-1t4" id="Bec-E7-laA"/>
                         <outlet property="serversMenuItem" destination="menu-stream-server-switch-item" id="XSd-3h-JjF"/>
+                        <outlet property="serversToolbarButton" destination="pJN-Ml-6nI" id="qY6-Hv-5Gr"/>
                         <outlet property="toolbar" destination="Ahu-w9-jGR" id="Mw3-pR-n5s"/>
                     </connections>
                 </viewController>
@@ -1502,8 +1581,27 @@ DQ
                                 </searchFieldCell>
                             </searchField>
                         </searchToolbarItem>
+                        <toolbarItem implicitItemIdentifier="21EAEBE9-7630-4E17-B5E9-5816D4A0CB37" label="Servers" paletteLabel="Servers" title="No Server" sizingBehavior="auto" id="toolbar-server-stream">
+                            <nil key="toolTip"/>
+                            <popUpButton key="view" verticalHuggingPriority="750" id="pJN-Ml-6nI">
+                                <rect key="frame" x="0.0" y="14" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <popUpButtonCell key="cell" type="roundTextured" title="No Server" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="stream-servers-popup-empty" id="r9f-28-IXm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" autoenablesItems="NO" id="dzg-JI-yqy">
+                                        <items>
+                                            <menuItem title="No Server" state="on" enabled="NO" id="stream-servers-popup-empty">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                        </toolbarItem>
                     </allowedToolbarItems>
                     <defaultToolbarItems>
+                        <toolbarItem reference="toolbar-server-stream"/>
                         <toolbarItem reference="toolbar-refresh-stream"/>
                     </defaultToolbarItems>
                 </toolbar>
@@ -1819,17 +1917,16 @@ DQ
                                 <action selector="toggleFavorite:" target="vc-post-detail" id="Y1f-GE-A8S"/>
                             </connections>
                         </toolbarItem>
-                        <toolbarItem implicitItemIdentifier="20F21C43-E748-4974-A37A-D6E18D1C3601" explicitItemIdentifier="Detail-Source" label="View Source" paletteLabel="View Source" image="external_link" visibilityPriority="2" sizingBehavior="auto" autovalidates="NO" id="toolbar-view-source">
+                        <toolbarItem implicitItemIdentifier="20F21C43-E748-4974-A37A-D6E18D1C3601" explicitItemIdentifier="Detail-Source" label="View Source" paletteLabel="View Source" visibilityPriority="2" sizingBehavior="auto" autovalidates="NO" id="toolbar-view-source">
                             <nil key="toolTip"/>
-                            <button key="view" verticalHuggingPriority="750" misplaced="YES" id="UXu-fb-ecy">
+                            <imageReference key="image" image="external_link" symbolScale="small"/>
+                            <button key="view" verticalHuggingPriority="750" id="UXu-fb-ecy">
                                 <rect key="frame" x="22" y="14" width="30" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="ezF-ak-BPt"/>
-                                </constraints>
-                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="external_link" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="92b-1a-aS6">
+                                <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="92b-1a-aS6">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <imageReference key="image" image="external_link" symbolScale="small"/>
                                 </buttonCell>
                             </button>
                             <connections>
@@ -1837,12 +1934,9 @@ DQ
                             </connections>
                         </toolbarItem>
                         <toolbarItem implicitItemIdentifier="AB0BC7FB-5025-4476-A10D-76D188A1738D" explicitItemIdentifier="Detail-View" label="View in Site" paletteLabel="View in Site" toolTip="View in Site" image="network" catalog="system" visibilityPriority="3" sizingBehavior="auto" autovalidates="NO" id="toolbar-view-site">
-                            <button key="view" verticalHuggingPriority="750" misplaced="YES" id="BtY-R5-pwX">
+                            <button key="view" verticalHuggingPriority="750" id="BtY-R5-pwX">
                                 <rect key="frame" x="13" y="14" width="42" height="23"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="Qz9-Vh-yzf"/>
-                                </constraints>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="network" catalog="system" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="lR8-NT-gFI">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1926,7 +2020,7 @@ DQ
                                 </textFieldCell>
                             </textField>
                             <textField horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Mw7-LV-4Zn">
-                                <rect key="frame" x="20" y="55" width="260" height="94"/>
+                                <rect key="frame" x="20" y="63" width="260" height="86"/>
                                 <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Reason" drawsBackground="YES" id="flag-reason">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1934,8 +2028,8 @@ DQ
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ven-YH-5Aj">
-                                <rect key="frame" x="222" y="13" width="65" height="32"/>
-                                <buttonCell key="cell" type="push" title="Send" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="flag-send-button">
+                                <rect key="frame" x="223" y="14" width="63" height="40"/>
+                                <buttonCell key="cell" type="push" title="Send" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="flag-send-button">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <string key="keyEquivalent" base64-UTF8="YES">
@@ -1948,8 +2042,8 @@ DQ
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LEQ-Yo-doF">
-                                <rect key="frame" x="145" y="13" width="76" height="32"/>
-                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="flag-cancel-button">
+                                <rect key="frame" x="146" y="14" width="74" height="40"/>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="flag-cancel-button">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <string key="keyEquivalent" base64-UTF8="YES">
@@ -2045,13 +2139,13 @@ Gw
                                                         <fragment content="🚩NO NEEDS"/>
                                                     </attributedString>
                                                 </textField>
-                                                <customView horizontalCompressionResistancePriority="250" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="2cr-ro-hK6" customClass="FlowLayoutView" customModule="B9ImageBoard" customModuleProvider="target">
-                                                    <rect key="frame" x="15" y="76" width="267" height="20"/>
+                                                <customView horizontalCompressionResistancePriority="250" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="2cr-ro-hK6" customClass="FlowLayoutView" customModule="B9ImageBoard" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="66" width="267" height="30"/>
                                                     <subviews>
                                                         <button verticalHuggingPriority="750" id="Yyh-a7-Kb7">
-                                                            <rect key="frame" x="-7" y="-7" width="153" height="32"/>
+                                                            <rect key="frame" x="-6" y="-6" width="151" height="40"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <buttonCell key="cell" type="push" title="Acknowledgements" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="about-acknowledgements">
+                                                            <buttonCell key="cell" type="push" title="Acknowledgements" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="about-acknowledgements">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                             </buttonCell>
@@ -2060,9 +2154,9 @@ Gw
                                                             </connections>
                                                         </button>
                                                         <button verticalHuggingPriority="750" imageHugsTitle="YES" id="zZn-Bb-5R5">
-                                                            <rect key="frame" x="144" y="-7" width="130" height="32"/>
+                                                            <rect key="frame" x="145" y="-1" width="128" height="32"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <buttonCell key="cell" type="push" title="Privacy Policy" bezelStyle="rounded" imagePosition="leading" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="about-privacy">
+                                                            <buttonCell key="cell" type="push" title="Privacy Policy" bezelStyle="rounded" imagePosition="leading" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="about-privacy">
                                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                 <font key="font" metaFont="system"/>
                                                                 <imageReference key="image" image="external_link" symbolScale="small"/>
@@ -2199,10 +2293,10 @@ Gw
             </objects>
             <point key="canvasLocation" x="1429" y="1231"/>
         </scene>
-        <!--Editor Choice-->
+        <!--Samples-->
         <scene sceneID="nrn-QR-TIp">
             <objects>
-                <viewController title="Editor Choice" storyboardIdentifier="PostEditorChoiceListController" id="vc-editor-choice" customClass="PostEditorChoiceListController" customModule="B9ImageBoard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Samples" storyboardIdentifier="PostEditorChoiceListController" id="vc-editor-choice" customClass="PostEditorChoiceListController" customModule="B9ImageBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="Vpl-nC-9qe">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2275,6 +2369,7 @@ Gw
         <image name="NextIndicator" width="100" height="70"/>
         <image name="PrevIndicator" width="100" height="70"/>
         <image name="SwipeBack" width="60" height="120"/>
+        <image name="archivebox" catalog="system" width="16" height="14"/>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="18" height="15"/>
         <image name="cursorarrow" catalog="system" width="11" height="16"/>
         <image name="exclamationmark.triangle.fill" catalog="system" width="17" height="15"/>
@@ -2282,7 +2377,6 @@ Gw
         <image name="favorite" width="32" height="32"/>
         <image name="flag_off" width="32" height="32"/>
         <image name="gearshape" catalog="system" width="16" height="16"/>
-        <image name="house" catalog="system" width="19" height="16"/>
         <image name="infinity.circle" catalog="system" width="15" height="15"/>
         <image name="keyboard" catalog="system" width="19" height="13"/>
         <image name="logo44" width="88" height="88"/>

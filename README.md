@@ -8,8 +8,8 @@ B9ImageBoard is a macOS only Moebooru client. I will do my best to make it effic
 
 Features:
 
-* Efficient list browsing - Infinite scroll, no more clicks on the paging button;
-* Efficient image loading - Related images will be automatically preloaded;
+* Efficient list browsing - Infinite scroll, no more paging button to click;
+* Efficient image loading - Related images will be preloaded automatically;
 * Cache and cache control, support offline use;
 * Trackpad optimized;
 * Keyboard shortcuts optimized;

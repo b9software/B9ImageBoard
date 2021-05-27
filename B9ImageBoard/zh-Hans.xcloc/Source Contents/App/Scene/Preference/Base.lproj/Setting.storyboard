@@ -187,7 +187,6 @@
                                                                             <font key="font" metaFont="system"/>
                                                                         </buttonCell>
                                                                         <connections>
-                                                                            <action selector="onCleanCache:" target="vc-preferences" id="HOW-E2-DL5"/>
                                                                             <outlet property="nextKeyView" destination="9ZW-mp-W1B" id="Kjd-P4-1Xb"/>
                                                                             <segue destination="vc-tag-blacklist" kind="custom" customClass="NavigationPushSegue" customModule="B9ImageBoard" customModuleProvider="target" id="gfL-Ab-aMt"/>
                                                                         </connections>
@@ -210,7 +209,6 @@
                                                                             <font key="font" metaFont="system"/>
                                                                         </buttonCell>
                                                                         <connections>
-                                                                            <action selector="onCleanCache:" target="vc-preferences" id="XmM-mb-ZFK"/>
                                                                             <outlet property="nextKeyView" destination="J9y-xm-Mwe" id="zNn-Zs-Fby"/>
                                                                             <segue destination="vc-server-list" kind="custom" customClass="NavigationPushSegue" customModule="B9ImageBoard" customModuleProvider="target" id="gBm-tg-mqN"/>
                                                                         </connections>
@@ -873,7 +871,7 @@
                                         <rect key="frame" x="215" y="142" width="20" height="16"/>
                                         <textFieldCell key="cell" alignment="center" title="..." id="server-list-state">
                                             <font key="font" usesAppearanceFont="YES"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <attributedString key="userComments">
                                                 <fragment content="🚩NO NEEDS"/>
