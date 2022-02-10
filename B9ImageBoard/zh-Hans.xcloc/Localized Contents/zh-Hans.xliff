@@ -2,7 +2,7 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
   <file original="App/Scene/Base.lproj/Main.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2" build-num="13C90"/>
     </header>
     <body>
       <trans-unit id="A2H-X7-p5h.title" xml:space="preserve">
@@ -849,7 +849,7 @@
   </file>
   <file original="App/Scene/Post List/Base.lproj/RefreshFooter.xib" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2" build-num="13C90"/>
     </header>
     <body>
       <trans-unit id="9xU-QB-19N.title" xml:space="preserve">
@@ -876,7 +876,7 @@
   </file>
   <file original="App/Scene/Preference/Base.lproj/Setting.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2" build-num="13C90"/>
     </header>
     <body>
       <trans-unit id="menu-new-server.title" xml:space="preserve">
@@ -1152,7 +1152,7 @@
   </file>
   <file original="App/Support/Base.lproj/Localizable.stringsdict" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2" build-num="13C90"/>
     </header>
     <body>
       <trans-unit id="/STRINGS-ImageCount:dict/NSStringLocalizedFormatKey:dict/:string" xml:space="preserve">
@@ -1189,7 +1189,7 @@
   </file>
   <file original="App/Support/en.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2" build-num="13C90"/>
     </header>
     <body>
       <trans-unit id="CFBundleName" xml:space="preserve">
@@ -1197,15 +1197,14 @@
         <note>Bundle name</note>
       </trans-unit>
       <trans-unit id="NSHumanReadableCopyright" xml:space="preserve">
-        <source>Copyright © 2021 BB9z.</source>
-        <target>Copyright © 2021 BB9z.</target>
+        <source>Copyright © 2021-2022 BB9z.</source>
         <note>Copyright (human-readable)</note>
       </trans-unit>
     </body>
   </file>
   <file original="App/Support/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
     <header>
-      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.2" build-num="13C90"/>
     </header>
     <body>
       <trans-unit id="ALERT-SYSTEM-SETTING" xml:space="preserve">
@@ -1449,6 +1448,16 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <source>Post Tag Count &lt; 4</source>
         <target>图片标签不足四</target>
         <note>In Preference - Tag Blacklist</note>
+      </trans-unit>
+      <trans-unit id="tutorial-editor-demo" xml:space="preserve">
+        <source>The posts here will not be updated regularly, they are for demonstration purposes. You should add some servers so that you can browse them in the stream.</source>
+        <target>本应用是一个 Moebooru 客户端，你可以添加任一 Moebooru 图片站后在图片流中进行浏览。此处的图片为演示用，不会经常更新。</target>
+        <note>In Editor Choice</note>
+      </trans-unit>
+      <trans-unit id="tutorial-editor-demo-china-notice" xml:space="preserve">
+        <source>⚠️ NOTICE: You may have to use a proxy to load these posts in China mainland.</source>
+        <target>⚠️ 致中国大陆用户：此处图片主要来自 K 站，若刷不出来提示 SSL 错误是正常情况——知名的 Moebooru 图片站应该都需要“翻墙”才能访问。</target>
+        <note>In Editor Choice</note>
       </trans-unit>
     </body>
   </file>
