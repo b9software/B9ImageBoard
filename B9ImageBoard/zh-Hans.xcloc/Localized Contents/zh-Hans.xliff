@@ -231,6 +231,10 @@
         <source>View Support Directory</source>
         <note>Class = "NSMenuItem"; title = "View Support Directory"; ObjectID = "menu-dev-support-directory";</note>
       </trans-unit>
+      <trans-unit id="menu-dev-switchFilterRate.title" xml:space="preserve">
+        <source>Switch Filter</source>
+        <note>Class = "NSMenuItem"; title = "Switch Filter"; ObjectID = "menu-dev-switchFilterRate";</note>
+      </trans-unit>
       <trans-unit id="menu-dev-triggerDebugUI.title" xml:space="preserve">
         <source>Debug UI</source>
         <note>Class = "NSMenuItem"; title = "Debug UI"; ObjectID = "menu-dev-triggerDebugUI";</note>
@@ -1291,9 +1295,9 @@
         <source>It seems that you have used a higher version of this app before, but downgrading is not supported. It is highly recommended to upgrade to the latest version.
 
 Howerver, if you choose continue, you may experience a crash or even data corruption, although it may work normally.</source>
-        <target>可能你之前在用应用的更高版本，我们不支持应用降级，强烈推荐你升级到最新版本。
+        <target>似乎你之前使用过新版本，本应用不支持降级使用，强烈推荐你更新到最新版本。
 
-如果你选择继续使用，虽然应用可能会正常工作，但也有可能会崩溃甚至导致你的数据损坏。</target>
+如果你仍要继续使用，应用可能会崩溃，甚至会导致数据损坏丢失。</target>
         <note>Launch check</note>
       </trans-unit>
       <trans-unit id="LaunchError-DBTooNewTitle" xml:space="preserve">
@@ -1358,6 +1362,11 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
         <source>No internet connection, please check</source>
         <target>没有联网，请检查网络连接</target>
         <note>URLError</note>
+      </trans-unit>
+      <trans-unit id="URLError-status-404" xml:space="preserve">
+        <source>This post may have been deleted.</source>
+        <target>图片可能已被删除</target>
+        <note>Error Display</note>
       </trans-unit>
       <trans-unit id="action-cancel" xml:space="preserve">
         <source>Cancel</source>
@@ -1457,6 +1466,11 @@ Howerver, if you choose continue, you may experience a crash or even data corrup
       <trans-unit id="tutorial-editor-demo-china-notice" xml:space="preserve">
         <source>⚠️ NOTICE: You may have to use a proxy to load these posts in China mainland.</source>
         <target>⚠️ 致中国大陆用户：此处图片主要来自 K 站，若刷不出来提示 SSL 错误是正常情况——知名的 Moebooru 图片站应该都需要“翻墙”才能访问。</target>
+        <note>In Editor Choice</note>
+      </trans-unit>
+      <trans-unit id="tutorial-navigator" xml:space="preserve">
+        <source>You can move to other views by clicking here.</source>
+        <target>点击此处可以切换到其他页面</target>
         <note>In Editor Choice</note>
       </trans-unit>
     </body>

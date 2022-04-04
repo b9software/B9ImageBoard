@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="vc-main-window">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="vc-main-window">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -467,6 +467,12 @@ CA
                                                 <action selector="resetEditorChoice:" target="XrL-lA-GCD" id="dJs-eA-H5t"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Switch Filter" id="menu-dev-switchFilterRate">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="switchFilterRate:" target="XrL-lA-GCD" id="ri0-lC-SKB"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Reset Tutorials" id="menu-dev-resetTutorial">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
@@ -577,7 +583,7 @@ CA
                                 <toolbarItem implicitItemIdentifier="47569F1D-6889-4ECC-B5EA-522160EA0CBB" label="Custom View" paletteLabel="Custom View" title="Item 1" sizingBehavior="auto" id="f6n-3Y-eaP">
                                     <nil key="toolTip"/>
                                     <popUpButton key="view" verticalHuggingPriority="750" id="e2V-o2-eGF">
-                                        <rect key="frame" x="0.0" y="14" width="78" height="25"/>
+                                        <rect key="frame" x="1" y="14" width="74" height="25"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <popUpButtonCell key="cell" type="roundTextured" title="Item 1" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="ZdU-96-kHD" id="zT6-k5-Gjb">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1584,7 +1590,7 @@ DQ
                         <toolbarItem implicitItemIdentifier="21EAEBE9-7630-4E17-B5E9-5816D4A0CB37" label="Servers" paletteLabel="Servers" title="No Server" sizingBehavior="auto" id="toolbar-server-stream">
                             <nil key="toolTip"/>
                             <popUpButton key="view" verticalHuggingPriority="750" id="pJN-Ml-6nI">
-                                <rect key="frame" x="0.0" y="14" width="107" height="30"/>
+                                <rect key="frame" x="0.0" y="14" width="96" height="25"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <popUpButtonCell key="cell" type="roundTextured" title="No Server" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" autoenablesItems="NO" selectedItem="stream-servers-popup-empty" id="r9f-28-IXm">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2382,8 +2388,8 @@ Gw
         <image name="logo44" width="88" height="88"/>
         <image name="network" catalog="system" width="15" height="15"/>
         <image name="person" catalog="system" width="15" height="14"/>
-        <image name="rotate.left" catalog="system" width="16" height="17"/>
-        <image name="slider.vertical.3" catalog="system" width="18" height="17"/>
+        <image name="rotate.left" catalog="system" width="15" height="17"/>
+        <image name="slider.vertical.3" catalog="system" width="19" height="18"/>
         <image name="star.square" catalog="system" width="15" height="14"/>
         <image name="xmark.octagon.fill" catalog="system" width="16" height="15"/>
         <namedColor name="Background">
