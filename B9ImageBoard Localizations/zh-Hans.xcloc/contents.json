@@ -3,10 +3,10 @@
   "project" : "B9ImageBoard.xcodeproj",
   "targetLocale" : "zh-Hans",
   "toolInfo" : {
-    "toolBuildNumber" : "13C90",
+    "toolBuildNumber" : "15C500b",
     "toolID" : "com.apple.dt.xcode",
     "toolName" : "Xcode",
-    "toolVersion" : "13.2"
+    "toolVersion" : "15.2"
   },
   "version" : "1.0"
 }

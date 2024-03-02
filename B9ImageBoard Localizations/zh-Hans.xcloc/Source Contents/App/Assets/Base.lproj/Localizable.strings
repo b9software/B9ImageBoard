@@ -1,0 +1,156 @@
+/* General */
+"action-cancel" = "Cancel";
+
+/* General */
+"action-clean" = "Clean";
+
+/* General */
+"action-continue" = "Continue";
+
+/* General */
+"action-done" = "Done";
+
+/* General */
+"action-reset" = "Reset";
+
+/* General */
+"action-save" = "Save";
+
+/* Open iCloud System Preferences */
+"ALERT-SYSTEM-SETTING" = "System Preferences";
+
+/* In Preference */
+"CACHE-CLEAN-ALL-CONFIRM-MESSAGE" = "This action cannot be undone.";
+
+/* In Preference */
+"CACHE-CLEAN-ALL-CONFIRM-TITLE" = "Are you sure you want to clear all caches?";
+
+/* Launch check */
+"DB-RESET-SCHEMA-CONFIRM-MESSAGE" = "Resetting will erase all local records with no guarantee of fixing the issue.";
+
+/* Launch check */
+"DB-RESET-SCHEMA-CONFIRM-TITLE" = "Are you sure you want to reset database?";
+
+/* Image Load Error */
+"DETAIL-IMAGE-URL-NULL-ERROR" = "Image URL is missing.";
+
+/* Detail swipe reach end */
+"DETAIL-REACH-END" = "You've reached the end.";
+
+/* Detail swipe reach the top */
+"DETAIL-REACH-TOP" = "You've reached the top.";
+
+/* In Preference */
+"DOWNLOAD-CHOOSE-DIRECTORY-PANEL-BUTTON" = "Choose";
+
+/* In Preference */
+"DOWNLOAD-CHOOSE-DIRECTORY-PANEL-MESSAGE" = "Select a directory to save files to";
+
+/* In Preference */
+"DOWNLOAD-DIRECTORY-NOT-SET" = "Path has not been specified.";
+
+/* In HUD */
+"FAVORITE-ADD" = "⭐️ Favorited";
+
+/* In HUD */
+"FAVORITE-REMOVE" = "💔 Unfavored";
+
+/* iCloud No Account */
+"iclould-turn-on-message" = "Send anonymous flag requires you to turn on iCloud for B9ImageBoard.";
+
+/* iCloud No Account */
+"iclould-turn-on-title" = "Turn On iCloud";
+
+/* Launch check */
+"LaunchError-DBInitTitle" = "Database Issue Detected";
+
+/* Launch check */
+"LaunchError-DBSchemaTitle" = "Database Initialization Failed";
+
+/* Launch check */
+"LaunchError-DBTooNewMessage" = "A newer version of the app has been used before. Downgrading is not supported. Please update to the latest version. Continuing may lead to crashes or data loss.";
+
+/* Launch check */
+"LaunchError-DBTooNewTitle" = "Downgraded Database File";
+
+"LaunchError-DBResetAction" = "Reset Database";
+
+/* Link */
+"link-guide" = "https://github.com/b9software/B9ImageBoard/discussions/1";
+
+/* Link */
+"link-privacy" = "https://github.com/b9software/B9ImageBoard/blob/main/PrivacyPolicy.md";
+
+/* In Preference - Tag Blacklist */
+"LIST-ACTION-REMOVE" = "Remove";
+
+"preference.infoCacheSize" = "Temporarily: %1$@ / %2$@";
+"preference.infoPersistentImage" = "Persistent (Favorites): %1$@ / %2$@";
+
+/* In HUD */
+"POST-FLAG-SUCCESS" = "Flag submitted. Thank you for your feedback.";
+
+/* In Server Edit */
+"server-edit-base-exists" = "This Server already exists";
+
+/* In Server Edit */
+"server-edit-base-invalid-title" = "Invaild Server";
+
+/* In Server Edit */
+"server-edit-base-not-https" = "Only HTTPS server is supported.";
+
+/* In Server Edit */
+"server-edit-base-not-url" = "Please enter a valid URL.";
+
+/* In Server List */
+"server-list-empty" = "No servers added yet.";
+
+/* In Server List */
+"servers-count-remind-message" = "Adding more than two servers may require a subscription in future updates.";
+
+/* In Server List */
+"servers-count-remind-title" = "Reminder";
+
+/* In Home */
+"STREAM-NEW-POST" = "There are some new posts, click to view.";
+
+/* In Preference - Tag Blacklist */
+"TAG-BLACK-BUILDIN-NOTE" = "In order to make the content seen in the app safe for all ages, we have built-in filters. They are mandatory, you cannot edit or disable them.";
+
+/* In Preference - Tag Blacklist */
+"TAG-BLACK-BUILDIN-SECTION" = "Built-In";
+
+/* In Preference - Tag Blacklist */
+"TAG-BLACK-CUSTOM-SECTION" = "Custom";
+
+"tag-black-custom-empty" = "No Custom Tag";
+
+/* In Preference - Tag Blacklist */
+"TAG-BLACK-DELETE-TIP" = "You can delete tags by swip left or select one then press delete";
+
+/* In HUD */
+"TAG-BLACK-EDIT-EXISTE" = "This tag already exists.";
+
+/* In HUD */
+"TAG-BLACK-EDIT-NAME-EMPTY" = "Please enter a tag name.";
+
+/* In Preference - Tag Blacklist */
+"tag-block-count-filter" = "Post Tag Count < 4";
+
+/* In Editor Choice */
+"tutorial-editor-demo" = "The posts here will not be updated regularly, they are for demonstration purposes. You should add some servers so that you can browse them in the stream.";
+
+/* In Editor Choice */
+"tutorial-editor-demo-china-notice" = "⚠️ NOTICE: You may have to use a proxy to load these posts from China mainland.";
+
+/* In Editor Choice */
+"tutorial-navigator" = "You can move to other views by clicking here.";
+
+/* URLError */
+"URLError-networkConnectionLost" = "Network connection lost, please retry.";
+
+/* URLError */
+"URLError-notConnectedToInternet" = "No internet connection detected, check your network.";
+
+/* Error Display */
+"URLError-status-404" = "The post might have been deleted.";
